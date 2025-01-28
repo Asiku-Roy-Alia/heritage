@@ -408,6 +408,19 @@ border-radius:30px;
 .room_2il1i1{
 bottom:-15px; 
  }
+
+ .logo-nav {
+  height: 60px;       /* A common navbar height */
+  width: auto;        /* Keeps the original aspect ratio */
+  object-fit: contain;/* Ensures it scales nicely */
+}
+
+.logo-footer {
+  max-width: 80px;  /* Or whatever suits your design */
+  width: auto; 
+  height: auto;
+}
+
 /*********************common_end****************/
 
 /*********************book****************/
