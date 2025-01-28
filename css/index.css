@@ -1,0 +1,181 @@
+/*
+Template Name: Hotells
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+
+/*********************center****************/
+.carousel-caption{
+background-color: rgba(0, 0, 0, 0.7);
+padding-top:320px;
+bottom:0;
+left:0;
+width:100%;
+height:100%;
+ }
+.center_home img{
+min-height:700px;
+ }
+.main_3{
+bottom:-70px; 
+ }
+.center_home .carousel-indicators {
+bottom: 90px!important;
+}
+/*********************center_end****************/
+
+/*********************serv****************/
+#serv{
+margin-top:70px; 
+ }
+.serv_2r span a{
+width:40px;
+height:40px;
+line-height:38px;
+border:1px solid #ffac41;
+transition: 0.3s;
+ }
+.serv_2r span a:hover{
+background:#ffac41;
+color:#fff!important;
+ }
+.serv_2r{
+padding:60px 30px; 
+ }
+.serv_2r{
+min-height:310px; 
+ }
+.serv_2l img{
+min-height:310px; 
+ }
+/*********************serv_end****************/
+
+/*********************room****************/
+.room_1 .nav-tabs .nav-link {
+border: none;
+padding: 10px 20px;
+color:#fff;
+}
+.room_1 .nav-tabs .nav-link:hover {
+font-weight:bold;
+border-bottom:2px solid  #ffac41;
+}
+.room_1 .nav-tabs .nav-link.active {
+border-bottom:2px solid  #ffac41;
+background:none;
+}
+
+/*********************room_end****************/
+
+/*********************choose****************/
+.choose_1i span{
+width:160px;
+height:160px;
+line-height:160px;
+transition: 0.3s; 
+ }
+.choose_1i span:hover{
+color:#ffac41;
+ }
+/*********************choose_end****************/
+
+
+@media screen and (max-width : 767px){
+.main_3 {
+position:static!important;
+}
+.center_home br{
+display:none; 
+ }
+.center_home img{
+min-height:350px;
+ }
+.center_home .font_60{
+font-size:24px;
+ }
+.carousel-caption {
+padding:90px 10px 0px 10px;
+}
+.carousel-caption .button{
+padding-left:12px;
+padding-right:12px;
+}
+.carousel-caption .button_1{
+padding-left:12px;
+padding-right:12px;
+}
+.center_home p{
+font-size:13px;
+text-align:left;
+ }
+.center_home .carousel-indicators {
+bottom: 0!important;
+}
+.book_1i{
+margin-top:8px;
+margin-bottom:8px; 
+ }
+#serv {
+margin-top:0;
+}
+.serv_2r {
+min-height:auto;
+padding:15px;
+}
+.serv_2r p{
+text-align:left;
+}
+.serv_2{
+margin-top:15px;
+ }
+.room_1 .nav-tabs .nav-link {
+padding: 10px 10px;
+font-size:14px;
+}
+.choose_1i {
+margin-top:8px;
+margin-bottom:8px; 
+ }
+.connect_1ri {
+text-align:center; 
+ }
+.connect_1rir{
+margin-top:10px; 
+ }
+.serv_2l img{
+min-height:auto; 
+ }
+ }
+
+@media (min-width:576px) and (max-width:767px) {
+
+ }
+@media (min-width:768px) and (max-width:991px) {
+.book_1i .button_1{
+padding-left:10px;
+padding-right:10px; 
+ }
+.serv_2r {
+padding: 45px 30px;
+}
+.connect_1l {
+padding:10px!important; 
+ }
+.connect_1ril span{
+font-size:24px!important; 
+ }
+ }
+
+@media (min-width:992px) and (max-width:1200px) {
+.connect_1ril span{
+font-size:28px!important; 
+ }
+ }
+@media (min-width:1201px) and (max-width:1360px) {
+
+ }
+
+
+
