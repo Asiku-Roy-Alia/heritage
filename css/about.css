@@ -11,10 +11,13 @@ Licence: <a href="https://www.templateonweb.com/license">Website Template Licenc
 background-image: url(../img/25.jpg);
 background-position: center; 
  }
-.main_about{
-background-image: url(../img/26.jpg);
-background-position: center; 
- }
+ 
+.main_about {
+/* background-image: url("../img/26.jpg"); */
+background-color: #3a3138; /* or another color */
+background-position: center;
+}
+
 .accordion-button {
 background:#333;
 color:#fff; 

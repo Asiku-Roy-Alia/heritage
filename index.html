@@ -64,58 +64,65 @@
     <section id="header">
       <nav class="navbar navbar-expand-md navbar-light pt-3 pb-3" id="navbar_sticky">
         <div class="container-xl">
-			<a class="navbar-brand p-0 text-white" href="index.html">
-				<img src="img/logo.png" alt="Heritage Hotels Arua" class="logo-nav" />
-			  </a>			  
+          <a class="navbar-brand p-0 text-white" href="index.html">
+            <img src="img/logo.png" alt="Heritage Hotels Arua" class="logo-nav"/>
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                   aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- UPDATED NAV -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-0">
+              <!-- 1. HOME -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
+              <!-- 2. ABOUT -->
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                   role="button" data-bs-toggle="dropdown" aria-expanded="false">Rooms</a>
-                <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="rooms.html">Rooms</a></li>
-                  <li><a class="dropdown-item border-0" href="detail.html">Room Detail</a></li>
-                </ul>
+              <!-- 3. ACCOMMODATION -->
+              <li class="nav-item">
+                <a class="nav-link" href="accommodation.html">Accommodation</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                   role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                  <li><a class="dropdown-item border-0" href="blog_detail.html">Blog Detail</a></li>
-                </ul>
+              <!-- 4. RESTAURANT -->
+              <li class="nav-item">
+                <a class="nav-link" href="restaurant.html">Restaurant</a>
               </li>
+              <!-- 5. HEALTH CLUB & SPA -->
+              <li class="nav-item">
+                <a class="nav-link" href="health_club.html">Health Club &amp; Spa</a>
+              </li>
+              <!-- 6. SERVICES -->
               <li class="nav-item">
                 <a class="nav-link" href="services.html">Services</a>
               </li>
+              <!-- 7. BLOG -->
               <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-link" href="blog.html">Blog</a>
               </li>
+              <!-- 8. CONTACT -->
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
+
             <ul class="navbar-nav mb-0 ms-auto">
               <li class="nav-item">
                 <a class="nav-link button" href="#">BOOK NOW</a>
               </li>
             </ul>
           </div>
+          <!-- /UPDATED NAV -->
+
         </div>
       </nav>
     </section>
   </div>
+
 
   <!-- MAIN HERO SLIDER -->
   <div class="main_2 clearfix">
@@ -343,295 +350,174 @@
         <h1 class="mb-0 text-white">Rooms & Suites</h1>
       </div>
     </div>
+
+    <!-- Only one tab now: “DELUXE” -->
     <div class="row room_1 text-center">
       <div class="col-md-12">
         <ul class="nav nav-tabs mb-0 justify-content-center border-0">
-          <li class="nav-item d-inline-block me-2">
-            <a href="#home" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+          <!-- Remove Standard & Studio; keep only Deluxe -->
+          <li class="nav-item d-inline-block">
+            <a href="#deluxeTab" data-bs-toggle="tab" aria-expanded="false" 
+               class="nav-link active">
               <span class="d-md-block">DELUXE</span>
-            </a>
-          </li>
-          <li class="nav-item d-inline-block me-2">
-            <a href="#profile" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-              <span class="d-md-block">STANDARD</span>
-            </a>
-          </li>
-          <li class="nav-item d-inline-block me-2">
-            <a href="#profile1" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-              <span class="d-md-block">STUDIO</span>
             </a>
           </li>
         </ul>
       </div>
     </div>
 
-    <!-- TAB CONTENT -->
+    <!-- TAB CONTENT (only one pane now) -->
     <div class="room_2 row mt-4">
       <div class="tab-content">
-        <!-- Deluxe Tab -->
-        <div class="tab-pane active" id="home">
+        <div class="tab-pane active" id="deluxeTab">
           <div class="room_2i row">
-            <div class="col-md-4">
-              <div class="room_2il">
-                <div class="room_2il1 position-relative">
-                  <div class="room_2il1i">
-                    <div class="grid clearfix">
-                      <figure class="effect-jazz mb-0">
-                        <a href="#"><img src="img/Deluxe_single.jpg" class="w-100" alt="Deluxe Room"></a>
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="room_2il1i1 text-center position-absolute w-100">
-                    <span class="d-inline-block bg_yell text-white p-2 px-4">$32</span>
-                  </div>
-                </div>
-                <div class="room_2il2 bg-white text-center p-4">
-                  <h4 class="mt-2"><a href="#">Deluxe Single Room</a></h4>
-                  <p class="font_14">Enjoy a contemporary twist on classic comfort with ample space and local art décor.</p>
-                  <hr>
-                  <ul class="font_14 mb-0">
-                    <li class="d-inline-block"><i class="fa fa-user me-1 col_yell"></i> 3 <span class="text-muted mx-2">|</span></li>
-                    <li class="d-inline-block"><i class="fa fa-bed me-1 col_yell"></i> 1 King <span class="text-muted mx-2">|</span></li>
-                    <li class="d-inline-block"><i class="fa fa-square-o me-1 col_yell"></i> 78m²</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="room_2il">
-                <div class="room_2il1 position-relative">
-                  <div class="room_2il1i">
-                    <div class="grid clearfix">
-                      <figure class="effect-jazz mb-0">
-                        <a href="#"><img src="img/Delux_double.jpg" class="w-100" alt="Deluxe Room"></a>
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="room_2il1i1 text-center position-absolute w-100">
-                    <span class="d-inline-block bg_yell text-white p-2 px-4">$35</span>
-                  </div>
-                </div>
-                <div class="room_2il2 bg-white text-center p-4">
-                  <h4 class="mt-2"><a href="#">Deluxe Double Room</a></h4>
-                  <p class="font_14">Bask in warm tones and plush furnishings, ideal for family or group travel.</p>
-                  <hr>
-                  <ul class="font_14 mb-0">
-                    <li class="d-inline-block"><i class="fa fa-user me-1 col_yell"></i> 4 <span class="text-muted mx-2">|</span></li>
-                    <li class="d-inline-block"><i class="fa fa-bed me-1 col_yell"></i> 2 King <span class="text-muted mx-2">|</span></li>
-                    <li class="d-inline-block"><i class="fa fa-square-o me-1 col_yell"></i> 82m²</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="room_2il">
-                <div class="room_2il1 position-relative">
-                  <div class="room_2il1i">
-                    <div class="grid clearfix">
-                      <figure class="effect-jazz mb-0">
-                        <a href="#"><img src="img/Deluxe_twin.jpg" class="w-100" alt="Deluxe Room"></a>
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="room_2il1i1 text-center position-absolute w-100">
-                    <span class="d-inline-block bg_yell text-white p-2 px-4">$55</span>
-                  </div>
-                </div>
-                <div class="room_2il2 bg-white text-center p-4">
-                  <h4 class="mt-2"><a href="#">Deluxe Twin Room</a></h4>
-                  <p class="font_14">Designed for comfort, with twin king beds and plenty of room to unwind after a busy day.</p>
-                  <hr>
-                  <ul class="font_14 mb-0">
-                    <li class="d-inline-block"><i class="fa fa-user me-1 col_yell"></i> 3 <span class="text-muted mx-2">|</span></li>
-                    <li class="d-inline-block"><i class="fa fa-bed me-1 col_yell"></i> 2 King <span class="text-muted mx-2">|</span></li>
-                    <li class="d-inline-block"><i class="fa fa-square-o me-1 col_yell"></i> 86m²</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Standard Tab -->
-        <div class="tab-pane" id="profile">
-          <div class="room_2i row">
-            <!-- You can reuse or replace images/text to reflect Standard rooms -->
-            <div class="col-md-4">
-              <div class="room_2il">
-                <div class="room_2il1 position-relative">
-                  <div class="room_2il1i">
-                    <div class="grid clearfix">
-                      <figure class="effect-jazz mb-0">
-                        <a href="#"><img src="img/10.jpg" class="w-100" alt="Standard Room"></a>
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="room_2il1i1 text-center position-absolute w-100">
-                    <span class="d-inline-block bg_yell text-white p-2 px-4">$32</span>
-                  </div>
-                </div>
-                <div class="room_2il2 bg-white text-center p-4">
-                  <h4 class="mt-2"><a href="#">Standard Contrast Room</a></h4>
-                  <p class="font_14">Ideal for business or leisure with a balance of comfort and affordability.</p>
-                  <hr>
-                  <ul class="font_14 mb-0">
-                    <li class="d-inline-block"><i class="fa fa-user me-1 col_yell"></i> 3</li>
-                    <li class="d-inline-block"><span class="text-muted mx-2">|</span><i class="fa fa-bed me-1 col_yell"></i> 1 King</li>
-                    <li class="d-inline-block"><span class="text-muted mx-2">|</span><i class="fa fa-square-o me-1 col_yell"></i> 78m²</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- ... Add more Standard room cards similarly ... -->
-            
-            <div class="col-md-4">
-              <div class="room_2il">
-                <div class="room_2il1 position-relative">
-                  <div class="room_2il1i">
-                    <div class="grid clearfix">
-                      <figure class="effect-jazz mb-0">
-                        <a href="#"><img src="img/11.jpg" class="w-100" alt="Standard Room"></a>
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="room_2il1i1 text-center position-absolute w-100">
-                    <span class="d-inline-block bg_yell text-white p-2 px-4">$35</span>
-                  </div>
-                </div>
-                <div class="room_2il2 bg-white text-center p-4">
-                  <h4 class="mt-2"><a href="#">Standard Yellow Room</a></h4>
-                  <p class="font_14">Stylish yet budget-friendly, complete with cozy furnishings.</p>
-                  <hr>
-                  <ul class="font_14 mb-0">
-                    <li class="d-inline-block"><i class="fa fa-user me-1 col_yell"></i> 4</li>
-                    <li class="d-inline-block"><span class="text-muted mx-2">|</span><i class="fa fa-bed me-1 col_yell"></i> 2 King</li>
-                    <li class="d-inline-block"><span class="text-muted mx-2">|</span><i class="fa fa-square-o me-1 col_yell"></i> 82m²</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="room_2il">
-                <div class="room_2il1 position-relative">
-                  <div class="room_2il1i">
-                    <div class="grid clearfix">
-                      <figure class="effect-jazz mb-0">
-                        <a href="#"><img src="img/12.jpg" class="w-100" alt="Standard Room"></a>
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="room_2il1i1 text-center position-absolute w-100">
-                    <span class="d-inline-block bg_yell text-white p-2 px-4">$55</span>
-                  </div>
-                </div>
-                <div class="room_2il2 bg-white text-center p-4">
-                  <h4 class="mt-2"><a href="#">Standard Twin Room</a></h4>
-                  <p class="font_14">A practical choice for travelers seeking comfort without the extra frills.</p>
-                  <hr>
-                  <ul class="font_14 mb-0">
-                    <li class="d-inline-block"><i class="fa fa-user me-1 col_yell"></i> 3</li>
-                    <li class="d-inline-block"><span class="text-muted mx-2">|</span><i class="fa fa-bed me-1 col_yell"></i> 2 King</li>
-                    <li class="d-inline-block"><span class="text-muted mx-2">|</span><i class="fa fa-square-o me-1 col_yell"></i> 86m²</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Studio Tab -->
-        <div class="tab-pane" id="profile1">
-          <div class="room_2i row">
-            <!-- You can reuse or replace images/text for Studio rooms -->
+            <!-- 1) Single Deluxe -->
             <div class="col-md-4">
               <div class="room_2il">
                 <div class="room_2il1 position-relative">
                   <div class="room_2il1i">
                     <div class="grid clearfix">
                       <figure class="effect-jazz mb-0">
-                        <a href="#"><img src="img/13.jpg" class="w-100" alt="Studio Room"></a>
+                        <a href="#"><img src="img/Deluxe_single.jpg" 
+                                         class="w-100" 
+                                         alt="Single Deluxe Room"></a>
                       </figure>
                     </div>
                   </div>
+                  <!-- Updated price to UGX 150,000 -->
                   <div class="room_2il1i1 text-center position-absolute w-100">
-                    <span class="d-inline-block bg_yell text-white p-2 px-4">$32</span>
+                    <span class="d-inline-block bg_yell text-white p-2 px-4">
+                      UGX 150,000
+                    </span>
                   </div>
                 </div>
                 <div class="room_2il2 bg-white text-center p-4">
-                  <h4 class="mt-2"><a href="#">Studio Contrast Room</a></h4>
-                  <p class="font_14">Open-concept design, perfect for extended stays or remote work.</p>
+                  <h4 class="mt-2">
+                    <a href="#">Deluxe Single Room</a>
+                  </h4>
+                  <p class="font_14">
+                    Enjoy a contemporary twist on classic comfort with 
+                    ample space and local art décor.
+                  </p>
                   <hr>
                   <ul class="font_14 mb-0">
-                    <li class="d-inline-block"><i class="fa fa-user me-1 col_yell"></i> 3</li>
-                    <li class="d-inline-block"><span class="text-muted mx-2">|</span><i class="fa fa-bed me-1 col_yell"></i> 1 King</li>
-                    <li class="d-inline-block"><span class="text-muted mx-2">|</span><i class="fa fa-square-o me-1 col_yell"></i> 78m²</li>
+                    <li class="d-inline-block">
+                      <i class="fa fa-user me-1 col_yell"></i> 3 
+                      <span class="text-muted mx-2">|</span>
+                    </li>
+                    <li class="d-inline-block">
+                      <i class="fa fa-bed me-1 col_yell"></i> 1 King 
+                      <span class="text-muted mx-2">|</span>
+                    </li>
+                    <li class="d-inline-block">
+                      <i class="fa fa-square-o me-1 col_yell"></i> 78m²
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <!-- ... More Studio room cards ... -->
-            
+
+            <!-- 2) Double Deluxe -->
             <div class="col-md-4">
               <div class="room_2il">
                 <div class="room_2il1 position-relative">
                   <div class="room_2il1i">
                     <div class="grid clearfix">
                       <figure class="effect-jazz mb-0">
-                        <a href="#"><img src="img/14.jpg" class="w-100" alt="Studio Room"></a>
+                        <a href="#"><img src="img/Delux_double.jpg"
+                                         class="w-100"
+                                         alt="Double Deluxe Room"></a>
                       </figure>
                     </div>
                   </div>
+                  <!-- Updated price to UGX 200,000 -->
                   <div class="room_2il1i1 text-center position-absolute w-100">
-                    <span class="d-inline-block bg_yell text-white p-2 px-4">$35</span>
+                    <span class="d-inline-block bg_yell text-white p-2 px-4">
+                      UGX 200,000
+                    </span>
                   </div>
                 </div>
                 <div class="room_2il2 bg-white text-center p-4">
-                  <h4 class="mt-2"><a href="#">Studio Yellow Room</a></h4>
-                  <p class="font_14">An airy layout with natural light, combining comfort and utility.</p>
+                  <h4 class="mt-2">
+                    <a href="#">Deluxe Double Room</a>
+                  </h4>
+                  <p class="font_14">
+                    Bask in warm tones and plush furnishings, ideal for 
+                    family or group travel.
+                  </p>
                   <hr>
                   <ul class="font_14 mb-0">
-                    <li class="d-inline-block"><i class="fa fa-user me-1 col_yell"></i> 4</li>
-                    <li class="d-inline-block"><span class="text-muted mx-2">|</span><i class="fa fa-bed me-1 col_yell"></i> 2 King</li>
-                    <li class="d-inline-block"><span class="text-muted mx-2">|</span><i class="fa fa-square-o me-1 col_yell"></i> 82m²</li>
+                    <li class="d-inline-block">
+                      <i class="fa fa-user me-1 col_yell"></i> 4 
+                      <span class="text-muted mx-2">|</span>
+                    </li>
+                    <li class="d-inline-block">
+                      <i class="fa fa-bed me-1 col_yell"></i> 2 King 
+                      <span class="text-muted mx-2">|</span>
+                    </li>
+                    <li class="d-inline-block">
+                      <i class="fa fa-square-o me-1 col_yell"></i> 82m²
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
-            
+
+            <!-- 3) Twin Deluxe -->
             <div class="col-md-4">
               <div class="room_2il">
                 <div class="room_2il1 position-relative">
                   <div class="room_2il1i">
                     <div class="grid clearfix">
                       <figure class="effect-jazz mb-0">
-                        <a href="#"><img src="img/15.jpg" class="w-100" alt="Studio Room"></a>
+                        <a href="#"><img src="img/Deluxe_twin.jpg"
+                                         class="w-100"
+                                         alt="Twin Deluxe Room"></a>
                       </figure>
                     </div>
                   </div>
+                  <!-- Updated price to UGX 250,000 -->
                   <div class="room_2il1i1 text-center position-absolute w-100">
-                    <span class="d-inline-block bg_yell text-white p-2 px-4">$55</span>
+                    <span class="d-inline-block bg_yell text-white p-2 px-4">
+                      UGX 250,000
+                    </span>
                   </div>
                 </div>
                 <div class="room_2il2 bg-white text-center p-4">
-                  <h4 class="mt-2"><a href="#">Studio Twin Room</a></h4>
-                  <p class="font_14">Dual sleeping areas in a large, bright studio layout for flexible living.</p>
+                  <h4 class="mt-2">
+                    <a href="#">Deluxe Twin Room</a>
+                  </h4>
+                  <p class="font_14">
+                    Designed for comfort, with twin king beds and plenty 
+                    of room to unwind after a busy day.
+                  </p>
                   <hr>
                   <ul class="font_14 mb-0">
-                    <li class="d-inline-block"><i class="fa fa-user me-1 col_yell"></i> 3</li>
-                    <li class="d-inline-block"><span class="text-muted mx-2">|</span><i class="fa fa-bed me-1 col_yell"></i> 2 King</li>
-                    <li class="d-inline-block"><span class="text-muted mx-2">|</span><i class="fa fa-square-o me-1 col_yell"></i> 86m²</li>
+                    <li class="d-inline-block">
+                      <i class="fa fa-user me-1 col_yell"></i> 3 
+                      <span class="text-muted mx-2">|</span>
+                    </li>
+                    <li class="d-inline-block">
+                      <i class="fa fa-bed me-1 col_yell"></i> 2 King 
+                      <span class="text-muted mx-2">|</span>
+                    </li>
+                    <li class="d-inline-block">
+                      <i class="fa fa-square-o me-1 col_yell"></i> 86m²
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- End tab-pane -->
-      </div>
-    </div>
-  </div>
+
+          </div><!-- /row -->
+        </div><!-- /#deluxeTab -->
+      </div><!-- /.tab-content -->
+    </div><!-- /.room_2 -->
+  </div><!-- /.container-xl -->
 </section>
+
+
 
 <!-- WHY CHOOSE US SECTION -->
 <section id="choose" class="p_3">
