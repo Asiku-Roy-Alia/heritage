@@ -3,252 +3,238 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Heritage Hotels Arua  Your perfect stay in West Nile, Uganda. Comfortable rooms, diverse dining options, spa & fitness facilities, and unforgettable experiences.">
+  <meta name="description" content="Heritage Hotels Arua – Your perfect stay in West Nile, Uganda. Comfortable rooms, diverse dining options, spa & fitness facilities, and unforgettable experiences.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Heritage Hotels UG</title>
+
+  <!-- Styles -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/global.css" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <!-- Android Icons -->
+  <link rel="icon" type="image/png" sizes="512x512" href="img/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="img/site.webmanifest">
+
+  <!-- Scripts -->
   <script src="js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
 
-<div class="main clearfix position-relative">
-
-  <!-- TOP CONTACT & LOGO SECTION -->
-  <div class="main_1 clearfix position-absolute top-0 w-100">
-    <section id="top" class="pt-3 pb-3">
-      <div class="container-xl">
-        <div class="row top_1">
-          <div class="col-md-4">
-            <div class="top_1l">
-              <span class="d-inline-block bg_yell rounded-circle float-start me-2 text-center">
-                <a href="#"><i class="fa fa-phone text-white"></i></a>
-              </span>
-              <h6 class="mb-0 lh-base font_14">
-                <a class="text-white" href="#">
-                  For Inquiries: <br>
-                  +256 393274611
-                </a>
-              </h6>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="top_1m text-center mt-2">
-              <h3 class="mb-0">
-                <a href="index.html">
-                  <img src="img/logo.png" alt="Logo" class="img-fluid">
-                </a>
-              </h3>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="top_1r mt-2 text-end">
-              <ul class="mb-0">
-                <li class="d-inline-block"><a class="text-white" href="#"><i class="fa fa-facebook"></i></a></li>
-                <li class="d-inline-block"><a class="text-white" href="#"><i class="fa fa-instagram"></i></a></li>
-                <li class="d-inline-block"><a class="text-white" href="#"><i class="fa fa-tripadvisor"></i></a></li>
-                <li class="d-inline-block"><a class="text-white" href="#"><i class="fa fa-pinterest"></i></a></li>
-                <li class="d-inline-block"><a class="text-white" href="#"><i class="fa fa-tumblr"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+<!-- TOP BAR (Address + Phone + Email) -->
+<div class="top-bar">
+  <div class="container-xl">
+    <div class="contact-info">
+      <div>
+        <i class="fa fa-map-marker"></i> Plot 24, Weatherhead Parklane, Arua
       </div>
-    </section>
+      <div>
+        <i class="fa fa-phone"></i> +256 393274611
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:info@heritagehotelsug.com" class="text-white text-decoration-none">
+          info@heritagehotelsug.com
+        </a>
+      </div>
+    </div>
+    <!-- You could also move “Book Now” up here if you like, 
+         but for now let's keep it in the nav row. -->
+  </div>
+</div>
 
-    <!-- NAVIGATION -->
-    <section id="header">
-      <nav class="navbar navbar-expand-md navbar-light pt-3 pb-3" id="navbar_sticky">
-        <div class="container-xl">
-          <a class="navbar-brand p-0 text-white" href="index.html">
-            <img src="img/logo.png" alt="Heritage Hotels Arua" class="logo-nav"/>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<!-- MAIN NAVBAR -->
+<nav class="navbar navbar-expand-md" id="navbar_sticky">
+  <div class="container-xl">
+    <!-- LOGO -->
+    <a class="navbar-brand p-0" href="index.html">
+      <img src="img/logo.png" alt="Heritage Hotels Arua" />
+    </a>
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" style="color:#fff;"></span>
+    </button>
+    <!-- NAV LINKS -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="accommodation.html">Accommodation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="restaurant.html">Restaurant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="health_club.html">Health Club &amp; Spa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <!-- BOOK NOW Button -->
+      <ul class="navbar-nav ms-2">
+        <li class="nav-item">
+          <a class="nav-link button" href="mailto:info@heritagehotelsug.com">Book Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-          <!-- UPDATED NAV -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-0">
-              <!-- 1. HOME -->
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+<!-- HERO SLIDER -->
+<div class="main_2 clearfix">
+  <section id="center" class="center_home">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="img/temp/OSOA2015-scaled.jpg" class="d-block w-100" alt="Slider 1">
+          <div class="carousel-caption d-md-block">
+            <h1 class="font_60">Welcome to Heritage Hotels Arua</h1>
+            <p class="text-white mt-3">
+              Discover unmatched hospitality in the heart of West Nile. 
+              We offer modern rooms, exquisite dining, and authentic cultural experiences.
+            </p>
+            <ul class="mb-0 mt-4">
+              <li class="d-inline-block">
+                <a class="button text-uppercase" href="#">Learn More</a>
               </li>
-              <!-- 2. ABOUT -->
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <!-- 3. ACCOMMODATION -->
-              <li class="nav-item">
-                <a class="nav-link" href="accommodation.html">Accommodation</a>
-              </li>
-              <!-- 4. RESTAURANT -->
-              <li class="nav-item">
-                <a class="nav-link" href="restaurant.html">Restaurant</a>
-              </li>
-              <!-- 5. HEALTH CLUB & SPA -->
-              <li class="nav-item">
-                <a class="nav-link" href="health_club.html">Health Club &amp; Spa</a>
-              </li>
-              <!-- 6. SERVICES -->
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
-              </li>
-              <!-- 7. BLOG -->
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <!-- 8. CONTACT -->
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+              <li class="d-inline-block ms-2">
+                <a class="button_1 text-uppercase" href="mailto:info@heritagehotelsug.com">Book Now</a>
               </li>
             </ul>
-
-            <ul class="navbar-nav mb-0 ms-auto">
-              <li class="nav-item">
-                <a class="nav-link button" href="#">BOOK NOW</a>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="img/temp/accomodation2-scaled.jpg" class="d-block w-100" alt="Slider 2">
+          <div class="carousel-caption d-md-block">
+            <h1 class="font_60">Experience Arua’s Warm Hospitality</h1>
+            <p class="text-white mt-3">
+              From our friendly staff to our comfortable rooms, every moment 
+              at Heritage Hotels Arua is designed to help you relax and feel at home.
+            </p>
+            <ul class="mb-0 mt-4">
+              <li class="d-inline-block">
+                <a class="button text-uppercase" href="#">Learn More</a>
+              </li>
+              <li class="d-inline-block ms-2">
+                <a class="button_1 text-uppercase" href="mailto:info@heritagehotelsug.com">Book Now</a>
               </li>
             </ul>
           </div>
-          <!-- /UPDATED NAV -->
-
         </div>
-      </nav>
-    </section>
-  </div>
-
-
-  <!-- MAIN HERO SLIDER -->
-  <div class="main_2 clearfix">
-    <section id="center" class="center_home">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <!-- <img src="img/Index_carousel_1_conference.jpg" class="d-block w-100" alt="Slider 1"> -->
-			<img src="img/temp/OSOA2015-scaled.jpg" class="d-block w-100" alt="Slider 1">
-            <div class="carousel-caption d-md-block">
-              <h1 class="font_60">Welcome to Heritage Hotels Arua</h1>
-              <p class="text-white mt-3">
-                Discover unmatched hospitality in the heart of West Nile. We offer modern rooms, exquisite dining, and authentic cultural experiences to make every stay memorable.
-              </p>
-              <ul class="mb-0 mt-4">
-                <li class="d-inline-block">
-                  <a class="button text-uppercase" href="#">Learn More</a>
-                </li>
-                <li class="d-inline-block ms-2">
-                  <a class="button_1 text-uppercase" href="#">Book Now</a>
-                </li>
-              </ul>
-            </div>
-          </div> 
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <img src="img/temp/accomodation2-scaled.jpg" class="d-block w-100" alt="Slider 2">
-            <div class="carousel-caption d-md-block">
-              <h1 class="font_60">Experience Arua’s Warm Hospitality</h1>
-              <p class="text-white mt-3">
-                From our friendly staff to our comfortable rooms, every moment at Heritage Hotels Arua is designed to help you relax and feel at home. Come explore the beauty of Uganda’s West Nile region with us.
-              </p>
-              <ul class="mb-0 mt-4">
-                <li class="d-inline-block">
-                  <a class="button text-uppercase" href="#">Learn More</a>
-                </li>
-                <li class="d-inline-block ms-2">
-                  <a class="button_1 text-uppercase" href="#">Book Now</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <img src="img/temp/HERITAGE-COURTS-47-min-scaled.jpg" class="d-block w-100" alt="Slider 3">
-            <div class="carousel-caption d-md-block">
-              <h1 class="font_60">Relax & Unwind in West Nile</h1>
-              <p class="text-white mt-3">
-                Savor our culinary delights, rejuvenate at our spa, and enjoy the stunning scenery surrounding Arua. Heritage Hotels is your perfect gateway to comfort and convenience.
-              </p>
-              <ul class="mb-0 mt-4">
-                <li class="d-inline-block">
-                  <a class="button text-uppercase" href="#">Learn More</a>
-                </li>
-                <li class="d-inline-block ms-2">
-                  <a class="button_1 text-uppercase" href="#">Book Now</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-  </div>
-
-  <!-- QUICK BOOKING BAR -->
-  <div class="main_3 clearfix w-100 position-absolute">
-    <section id="book_o">
-      <div class="container-xl">
-        <div class="row book_1 p-5 px-4 shadow_box bg-white">
-          <div class="col-md-3">
-            <div class="book_1i">
-              <input class="form-control bg-light border-0" id="example-date" type="date" name="date">
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="book_1i">
-              <select class="form-select bg-light border-0" aria-label="Guests">
-                <option selected>Guests</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="book_1i">
-              <select class="form-select bg-light border-0" aria-label="Children">
-                <option selected>Children</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="book_1i">
-              <h6 class="mb-0">
-                <a class="button_1 d-block text-center fw-bold" href="#">Check Rates</a>
-              </h6>
-            </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="img/temp/HERITAGE-COURTS-47-min-scaled.jpg" class="d-block w-100" alt="Slider 3">
+          <div class="carousel-caption d-md-block">
+            <h1 class="font_60">Relax & Unwind in West Nile</h1>
+            <p class="text-white mt-3">
+              Savor our culinary delights, rejuvenate at our spa, and enjoy the stunning scenery. 
+              Heritage Hotels is your perfect gateway to comfort.
+            </p>
+            <ul class="mb-0 mt-4">
+              <li class="d-inline-block">
+                <a class="button text-uppercase" href="#">Learn More</a>
+              </li>
+              <li class="d-inline-block ms-2">
+                <a class="button_1 text-uppercase" href="mailto:info@heritagehotelsug.com">Book Now</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-  </div>
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+</div>
+
+<!-- QUICK BOOKING BAR -->
+<div class="main_3 clearfix w-100">
+  <section id="book_o">
+    <div class="container-xl">
+      <div class="row book_1 p-5 px-4 shadow_box bg-white">
+        <div class="col-md-3">
+          <div class="book_1i">
+            <input class="form-control bg-light border-0" id="example-date"
+                   type="date" name="date">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="book_1i">
+            <select class="form-select bg-light border-0" aria-label="Guests">
+              <option selected>Guests</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="book_1i">
+            <select class="form-select bg-light border-0" aria-label="Children">
+              <option selected>Children</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="book_1i">
+            <h6 class="mb-0">
+              <a class="button_1 d-block text-center fw-bold" href="#">Check Rates</a>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
 <!-- BEST SERVICES SECTION -->
@@ -267,7 +253,9 @@
         <div class="serv_2l">
           <div class="grid clearfix">
             <figure class="effect-jazz mb-0">
-              <a href="#"><img src="img/index_service_bed.jpg" class="w-100" alt="Rooms & Apartments"></a>
+              <a href="#">
+                <img src="img/index_service_bed.jpg" class="w-100" alt="Rooms & Apartments">
+              </a>
             </figure>
           </div>
         </div>
@@ -276,7 +264,7 @@
         <div class="serv_2r text-center shadow_box">
           <h4>ROOMS & APARTMENTS</h4>
           <p class="mt-4 mb-4">
-            Whether you need a cozy room for a short stay or a spacious apartment for extended visits, we ensure each space is beautifully furnished, comfortable, and perfect for work or relaxation.
+            Whether you need a cozy room for a short stay or a spacious apartment for extended visits, each space is furnished and perfect for work or relaxation.
           </p>
           <span>
             <a class="d-inline-block rounded-circle col_yell" href="#">
@@ -293,7 +281,7 @@
         <div class="serv_2r text-center shadow_box">
           <h4>RESTAURANT</h4>
           <p class="mt-4 mb-4">
-            Taste the flavors of Uganda and beyond at our in-house restaurant. Our chefs skillfully blend local ingredients and international cuisines for an exceptional dining experience.
+            Taste the flavors of Uganda and beyond at our in-house restaurant. Our chefs blend local ingredients and international cuisines for an exceptional meal.
           </p>
           <span>
             <a class="d-inline-block rounded-circle col_yell" href="#">
@@ -306,7 +294,9 @@
         <div class="serv_2l">
           <div class="grid clearfix">
             <figure class="effect-jazz mb-0">
-              <a href="#"><img src="img/index_service_restaurant.jpg" class="w-100" alt="Restaurant"></a>
+              <a href="#">
+                <img src="img/index_service_restaurant.jpg" class="w-100" alt="Restaurant">
+              </a>
             </figure>
           </div>
         </div>
@@ -319,7 +309,9 @@
         <div class="serv_2l">
           <div class="grid clearfix">
             <figure class="effect-jazz mb-0">
-              <a href="#"><img src="img/index_service_physical.jpg" class="w-100" alt="Spa & Fitness"></a>
+              <a href="#">
+                <img src="img/index_service_physical.jpg" class="w-100" alt="Spa & Fitness">
+              </a>
             </figure>
           </div>
         </div>
@@ -328,7 +320,7 @@
         <div class="serv_2r text-center shadow_box">
           <h4>SPA & FITNESS</h4>
           <p class="mt-4 mb-4">
-            Unwind in our tranquil spa or keep up with your workout routine in our fitness center. We offer a range of wellness treatments and modern equipment to help you recharge.
+            Unwind in our tranquil spa or keep up with your workout routine in our fitness center. We offer a range of wellness treatments and modern equipment.
           </p>
           <span>
             <a class="d-inline-block rounded-circle col_yell" href="#">
@@ -347,18 +339,14 @@
     <div class="row serv_1 text-center mb-4">
       <div class="col-md-12">
         <hr class="line mx-auto">
-        <h1 class="mb-0 text-white">Rooms & Suites</h1>
+        <h1 class="mb-0 text-white">Rooms</h1>
       </div>
     </div>
-
-    <!-- Only one tab now: “DELUXE” -->
     <div class="row room_1 text-center">
       <div class="col-md-12">
         <ul class="nav nav-tabs mb-0 justify-content-center border-0">
-          <!-- Remove Standard & Studio; keep only Deluxe -->
           <li class="nav-item d-inline-block">
-            <a href="#deluxeTab" data-bs-toggle="tab" aria-expanded="false" 
-               class="nav-link active">
+            <a href="#deluxeTab" data-bs-toggle="tab" class="nav-link active">
               <span class="d-md-block">DELUXE</span>
             </a>
           </li>
@@ -366,26 +354,24 @@
       </div>
     </div>
 
-    <!-- TAB CONTENT (only one pane now) -->
+    <!-- Deluxe Only -->
     <div class="room_2 row mt-4">
       <div class="tab-content">
         <div class="tab-pane active" id="deluxeTab">
           <div class="room_2i row">
-
-            <!-- 1) Single Deluxe -->
+            <!-- Single Deluxe -->
             <div class="col-md-4">
               <div class="room_2il">
                 <div class="room_2il1 position-relative">
                   <div class="room_2il1i">
                     <div class="grid clearfix">
                       <figure class="effect-jazz mb-0">
-                        <a href="#"><img src="img/Deluxe_single.jpg" 
-                                         class="w-100" 
-                                         alt="Single Deluxe Room"></a>
+                        <a href="#">
+                          <img src="img/Deluxe_single.jpg" class="w-100" alt="Single Deluxe Room">
+                        </a>
                       </figure>
                     </div>
                   </div>
-                  <!-- Updated price to UGX 150,000 -->
                   <div class="room_2il1i1 text-center position-absolute w-100">
                     <span class="d-inline-block bg_yell text-white p-2 px-4">
                       UGX 150,000
@@ -393,21 +379,16 @@
                   </div>
                 </div>
                 <div class="room_2il2 bg-white text-center p-4">
-                  <h4 class="mt-2">
-                    <a href="#">Deluxe Single Room</a>
-                  </h4>
-                  <p class="font_14">
-                    Enjoy a contemporary twist on classic comfort with 
-                    ample space and local art décor.
-                  </p>
+                  <h4 class="mt-2"><a href="#">Deluxe Single Room</a></h4>
+                  <p class="font_14">Enjoy a contemporary twist on classic comfort with ample space and local art décor.</p>
                   <hr>
                   <ul class="font_14 mb-0">
                     <li class="d-inline-block">
-                      <i class="fa fa-user me-1 col_yell"></i> 3 
+                      <i class="fa fa-user me-1 col_yell"></i> 3
                       <span class="text-muted mx-2">|</span>
                     </li>
                     <li class="d-inline-block">
-                      <i class="fa fa-bed me-1 col_yell"></i> 1 King 
+                      <i class="fa fa-bed me-1 col_yell"></i> 1 King
                       <span class="text-muted mx-2">|</span>
                     </li>
                     <li class="d-inline-block">
@@ -417,21 +398,19 @@
                 </div>
               </div>
             </div>
-
-            <!-- 2) Double Deluxe -->
+            <!-- Double Deluxe -->
             <div class="col-md-4">
               <div class="room_2il">
                 <div class="room_2il1 position-relative">
                   <div class="room_2il1i">
                     <div class="grid clearfix">
                       <figure class="effect-jazz mb-0">
-                        <a href="#"><img src="img/Delux_double.jpg"
-                                         class="w-100"
-                                         alt="Double Deluxe Room"></a>
+                        <a href="#">
+                          <img src="img/Delux_double.jpg" class="w-100" alt="Double Deluxe Room">
+                        </a>
                       </figure>
                     </div>
                   </div>
-                  <!-- Updated price to UGX 200,000 -->
                   <div class="room_2il1i1 text-center position-absolute w-100">
                     <span class="d-inline-block bg_yell text-white p-2 px-4">
                       UGX 200,000
@@ -439,21 +418,16 @@
                   </div>
                 </div>
                 <div class="room_2il2 bg-white text-center p-4">
-                  <h4 class="mt-2">
-                    <a href="#">Deluxe Double Room</a>
-                  </h4>
-                  <p class="font_14">
-                    Bask in warm tones and plush furnishings, ideal for 
-                    family or group travel.
-                  </p>
+                  <h4 class="mt-2"><a href="#">Deluxe Double Room</a></h4>
+                  <p class="font_14">Bask in warm tones and plush furnishings, ideal for family or group travel.</p>
                   <hr>
                   <ul class="font_14 mb-0">
                     <li class="d-inline-block">
-                      <i class="fa fa-user me-1 col_yell"></i> 4 
+                      <i class="fa fa-user me-1 col_yell"></i> 4
                       <span class="text-muted mx-2">|</span>
                     </li>
                     <li class="d-inline-block">
-                      <i class="fa fa-bed me-1 col_yell"></i> 2 King 
+                      <i class="fa fa-bed me-1 col_yell"></i> 2 King
                       <span class="text-muted mx-2">|</span>
                     </li>
                     <li class="d-inline-block">
@@ -463,21 +437,19 @@
                 </div>
               </div>
             </div>
-
-            <!-- 3) Twin Deluxe -->
+            <!-- Twin Deluxe -->
             <div class="col-md-4">
               <div class="room_2il">
                 <div class="room_2il1 position-relative">
                   <div class="room_2il1i">
                     <div class="grid clearfix">
                       <figure class="effect-jazz mb-0">
-                        <a href="#"><img src="img/Deluxe_twin.jpg"
-                                         class="w-100"
-                                         alt="Twin Deluxe Room"></a>
+                        <a href="#">
+                          <img src="img/Deluxe_twin.jpg" class="w-100" alt="Twin Deluxe Room">
+                        </a>
                       </figure>
                     </div>
                   </div>
-                  <!-- Updated price to UGX 250,000 -->
                   <div class="room_2il1i1 text-center position-absolute w-100">
                     <span class="d-inline-block bg_yell text-white p-2 px-4">
                       UGX 250,000
@@ -485,21 +457,16 @@
                   </div>
                 </div>
                 <div class="room_2il2 bg-white text-center p-4">
-                  <h4 class="mt-2">
-                    <a href="#">Deluxe Twin Room</a>
-                  </h4>
-                  <p class="font_14">
-                    Designed for comfort, with twin king beds and plenty 
-                    of room to unwind after a busy day.
-                  </p>
+                  <h4 class="mt-2"><a href="#">Deluxe Twin Room</a></h4>
+                  <p class="font_14">Designed for comfort, with twin king beds and plenty of room to unwind after a busy day.</p>
                   <hr>
                   <ul class="font_14 mb-0">
                     <li class="d-inline-block">
-                      <i class="fa fa-user me-1 col_yell"></i> 3 
+                      <i class="fa fa-user me-1 col_yell"></i> 3
                       <span class="text-muted mx-2">|</span>
                     </li>
                     <li class="d-inline-block">
-                      <i class="fa fa-bed me-1 col_yell"></i> 2 King 
+                      <i class="fa fa-bed me-1 col_yell"></i> 2 King
                       <span class="text-muted mx-2">|</span>
                     </li>
                     <li class="d-inline-block">
@@ -509,15 +476,13 @@
                 </div>
               </div>
             </div>
-
-          </div><!-- /row -->
-        </div><!-- /#deluxeTab -->
-      </div><!-- /.tab-content -->
-    </div><!-- /.room_2 -->
-  </div><!-- /.container-xl -->
+            <!-- /rooms row -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
 
 <!-- WHY CHOOSE US SECTION -->
 <section id="choose" class="p_3">
@@ -532,6 +497,7 @@
       </div>
     </div>
     <div class="row choose_1">
+      <!-- icons row 1 -->
       <div class="col-md-3 col-sm-6">
         <div class="choose_1i text-center">
           <span class="d-inline-block rounded-circle shadow_box font_60">
@@ -561,11 +527,12 @@
           <span class="d-inline-block rounded-circle shadow_box font_60">
             <i class="fa fa-glide"></i>
           </span>
-          <h6 class="mb-0 mt-4">POOL</h6>
+          <h6 class="mb-0 mt-4">KIDS PARK</h6>
         </div>
       </div>
     </div>
     <div class="row choose_1 mt-4">
+      <!-- icons row 2 -->
       <div class="col-md-3 col-sm-6">
         <div class="choose_1i text-center">
           <span class="d-inline-block rounded-circle shadow_box font_60">
@@ -581,7 +548,7 @@
           </span>
           <h6 class="mb-0 mt-4">SALON</h6>
         </div>
-      </div>      
+      </div>
       <div class="col-md-3 col-sm-6">
         <div class="choose_1i text-center">
           <span class="d-inline-block rounded-circle shadow_box font_60">
@@ -611,124 +578,80 @@
         <h1 class="mb-0 text-white">Heritage Hotels Gallery</h1>
       </div>
     </div>
-    <div class="homei row mt-4">
-      <!-- Gallery Item 1 -->
-      <div class="col-md-4">
-        <div class="homei1">
-          <div class="homei1i position-relative">
-            <div class="homei1i1">
-              <div class="grid clearfix">
-                <figure class="effect-jazz mb-0">
-                  <a href="#"><img src="img/index_gallery_1.jpg" class="w-100" alt="Gallery 1"></a>
-                </figure>
-              </div>
-            </div>
-            <div class="homei1i2 text-center position-absolute w-100 top-0">
-              <ul class="mb-0">
-                <li class="d-inline-block me-1">
-                  <a data-bs-target="#exampleModal" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a>
-                </li>
-                <li class="d-inline-block">
-                  <a data-bs-target="#exampleModal" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+
+    <div id="galleryCarousel" class="carousel">
+      <div class="carousel-inner">
+        <!-- SLIDE 1 (active) -->
+        <div class="carousel-item active">
+          <img src="img/temp/OSOA2032-scaled.jpg" width="360" height="560"
+               class="d-block w-100"
+               alt="Gallery 1">
         </div>
-        <!-- Modal 1 -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title text-black" id="exampleModalLabel">Heritage Hotels</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/index_gallery_1.jpg" class="w-100" alt="Gallery 1 Full">
-              </div>
-            </div>
-          </div>
+        <!-- SLIDE 2 -->
+        <div class="carousel-item">
+          <img src="img/temp/IMG_0299-scaled.jpg" width="360" height="560"
+               class="d-block w-100"
+               alt="Gallery 2">
         </div>
-      </div>
-      <!-- Gallery Item 2 -->
-      <div class="col-md-4">
-        <div class="homei1">
-          <div class="homei1i position-relative">
-            <div class="homei1i1">
-              <div class="grid clearfix">
-                <figure class="effect-jazz mb-0">
-                  <a href="#"><img src="img/index_gallery_2.jpg" class="w-100" alt="Gallery 2"></a>
-                </figure>
-              </div>
-            </div>
-            <div class="homei1i2 text-center position-absolute w-100 top-0">
-              <ul class="mb-0">
-                <li class="d-inline-block me-1">
-                  <a data-bs-target="#exampleModal1" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a>
-                </li>
-                <li class="d-inline-block">
-                  <a data-bs-target="#exampleModal1" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <!-- SLIDE 3 -->
+        <div class="carousel-item">
+          <img src="img/temp/DSC_8030.jpg" width="360" height="560"
+               class="d-block w-100"
+               alt="Gallery 3">
         </div>
-        <!-- Modal 2 -->
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title text-black" id="exampleModalLabel1">Heritage Hotels</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/index_gallery_2.jpg" class="w-100" alt="Gallery 2 Full">
-              </div>
-            </div>
-          </div>
+        <!-- SLIDE 4 -->
+        <div class="carousel-item">
+          <img src="img/temp/OSOA2109-scaled.jpg" width="360" height="560"
+               class="d-block w-100"
+               alt="Gallery 4">
         </div>
-      </div>
-      <!-- Gallery Item 3 -->
-      <div class="col-md-4">
-        <div class="homei1">
-          <div class="homei1i position-relative">
-            <div class="homei1i1">
-              <div class="grid clearfix">
-                <figure class="effect-jazz mb-0">
-                  <a href="#"><img src="img/index_gallery_3.jpg" class="w-100" alt="Gallery 3"></a>
-                </figure>
-              </div>
-            </div>
-            <div class="homei1i2 text-center position-absolute w-100 top-0">
-              <ul class="mb-0">
-                <li class="d-inline-block me-1">
-                  <a data-bs-target="#exampleModal2" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a>
-                </li>
-                <li class="d-inline-block">
-                  <a data-bs-target="#exampleModal2" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <!-- SLIDE 5 -->
+        <div class="carousel-item">
+          <img src="img/temp/20231106_185213-scaled.jpg" width="360" height="560"
+               class="d-block w-100"
+               alt="Gallery 5">
         </div>
-        <!-- Modal 3 -->
-        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title text-black" id="exampleModalLabel2">Heritage Hotels</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/index_gallery_3.jpg" class="w-100" alt="Gallery 3 Full">
-              </div>
-            </div>
-          </div>
+        <!-- SLIDE 6 -->
+        <div class="carousel-item">
+          <img src="img/temp/DSC_2591-1-scaled.jpg" width="360" height="560"
+               class="d-block w-100"
+               alt="Gallery 6">
         </div>
-      </div>
-    </div>
-  </div>
+        <!-- SLIDE 7 -->
+        <div class="carousel-item">
+          <img src="img/temp/Restaurant.jpg" width="360" height="560"
+               class="d-block w-100"
+               alt="Gallery 7">
+        </div>
+        <!-- SLIDE 8 -->
+        <div class="carousel-item">
+          <img src="img/temp/Meeting-set.jpg" width="360" height="560"
+               class="d-block w-100"
+               alt="Gallery 8">
+        </div>
+      </div><!-- /.carousel-inner -->
+
+      <!-- NAVIGATION ARROWS -->
+      <button class="carousel-control-prev"
+              type="button"
+              data-bs-target="#galleryCarousel"
+              data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"
+              aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next"
+              type="button"
+              data-bs-target="#galleryCarousel"
+              data-bs-slide="next">
+        <span class="carousel-control-next-icon"
+              aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div><!-- /.carousel -->
+  </div><!-- /.container-xl -->
 </section>
+
 
 <!-- CUSTOMER REVIEWS SECTION -->
 <section id="testim" class="p_3 bg-light">
@@ -743,6 +666,7 @@
       <!-- Testimonial 1 -->
       <div class="col-md-4">
         <div class="testim_1i">
+          <!-- Enforce uniform min-height via .testim_1i1 -->
           <div class="testim_1i1 bg-white p-4 pb-5">
             <span class="col_yell">
               <i class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -750,9 +674,11 @@
               <i class="fa fa-star"></i>
             </span>
             <p class="mt-3">
-              “Heritage court's apartment is the best to accommodate you and it has gym ,steam bath, Sauna and kid's playing ground”
+              “Heritage court's apartment is the best to accommodate you and it has gym, steam bath, Sauna and kid's playing ground.”
             </p>
-            <span class="fs-3 pull-right col_yell"><i class="fa fa-quote-left"></i></span><br>
+            <span class="fs-3 pull-right col_yell">
+              <i class="fa fa-quote-left"></i>
+            </span><br>
           </div>
           <div class="testim_1i2 mt-4">
             <span>
@@ -777,7 +703,9 @@
             <p class="mt-3">
               “This simple but beautiful place has been my other home since 2014. Slightly out of the city center with its noise. It has affordable conference halls, neat accommodation, good food...”
             </p>
-            <span class="fs-3 pull-right col_yell"><i class="fa fa-quote-left"></i></span><br>
+            <span class="fs-3 pull-right col_yell">
+              <i class="fa fa-quote-left"></i>
+            </span><br>
           </div>
           <div class="testim_1i2 mt-4">
             <span>
@@ -800,9 +728,11 @@
               <i class="fa fa-star"></i>
             </span>
             <p class="mt-3">
-              “Always looking forward to aerobics and gym classes. Its perhaps my best aerobics spot in the country. Medi the aerobics coach is passionate and proffessional and leaves everyone exhausted with contentment.”
+              “Always looking forward to aerobics and gym classes. Its perhaps my best aerobics spot in the country. Medi the aerobics coach is passionate and professional and leaves everyone exhausted.”
             </p>
-            <span class="fs-3 pull-right col_yell"><i class="fa fa-quote-left"></i></span><br>
+            <span class="fs-3 pull-right col_yell">
+              <i class="fa fa-quote-left"></i>
+            </span><br>
           </div>
           <div class="testim_1i2 mt-4">
             <span>
@@ -825,24 +755,31 @@
     <div class="row connect_1">
       <div class="col-md-4">
         <div class="connect_1l p-4">
-          <h1 class="mb-5">In the Focus of All You Need</h1>
+          <h1 class="mb-5">All in the vicinity of Heritage</h1>
+
+          <!-- 1) Golf Course (2 min away) -->
           <div class="connect_1ri row">
             <div class="col-md-2">
               <div class="connect_1ril">
-                <span class="text-danger fs-1 lh-1"><i class="fa fa-building"></i></span>
+                <span class="text-danger fs-1 lh-1">
+                  <i class="fa fa-building"></i>
+                </span>
               </div>
             </div>
             <div class="col-md-10">
               <div class="connect_1rir">
-                <h5>Arua Hill Stadium</h5>
-                <h6 class="mb-0 font_14">5 MINUTES AWAY</h6>
+                <h5>Golf Course</h5>
+                <h6 class="mb-0 font_14">2 MINUTES AWAY</h6>
               </div>
             </div>
           </div>
+          <!-- 2) Local Crafts Market -->
           <div class="connect_1ri row mt-4">
             <div class="col-md-2">
               <div class="connect_1ril">
-                <span class="text-info fs-1 lh-1"><i class="fa fa-camera"></i></span>
+                <span class="text-info fs-1 lh-1">
+                  <i class="fa fa-camera"></i>
+                </span>
               </div>
             </div>
             <div class="col-md-10">
@@ -852,10 +789,13 @@
               </div>
             </div>
           </div>
+          <!-- 3) Arua Main Market -->
           <div class="connect_1ri row mt-4">
             <div class="col-md-2">
               <div class="connect_1ril">
-                <span class="text-success fs-1 lh-1"><i class="fa fa-university"></i></span>
+                <span class="text-success fs-1 lh-1">
+                  <i class="fa fa-university"></i>
+                </span>
               </div>
             </div>
             <div class="col-md-10">
@@ -865,24 +805,31 @@
               </div>
             </div>
           </div>
+          <!-- 4) Shopping Center (now 5 min away) -->
           <div class="connect_1ri row mt-4">
             <div class="col-md-2">
               <div class="connect_1ril">
-                <span class="text-warning fs-1 lh-1"><i class="fa fa-shopping-bag"></i></span>
+                <span class="text-warning fs-1 lh-1">
+                  <i class="fa fa-shopping-bag"></i>
+                </span>
               </div>
             </div>
             <div class="col-md-10">
               <div class="connect_1rir">
                 <h5>Shopping Center</h5>
-                <h6 class="mb-0 font_14">12 MINUTES AWAY</h6>
+                <h6 class="mb-0 font_14">5 MINUTES AWAY</h6>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Google Map -->
       <div class="col-md-8 p-0">
         <div class="connect_1r">
-		  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.070090055103!2d30.91954710032076!3d3.0191606969440845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x176e623f09812411%3A0xfd335fea7e56d6a2!2sHeritage%20Courts%20-%20Arua!5e0!3m2!1sen!2sug!4v1738061947041!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.070090055103!2d30.91954710032076!3d3.0191606969440845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x176e623f09812411%3A0xfd335fea7e56d6a2!2sHeritage%20Courts%20-%20Arua!5e0!3m2!1sen!2sug!4v1738061947041!5m2!1sen!2sug"
+          width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"  referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
     </div>
@@ -900,7 +847,9 @@
           <p class="fs-5 text-light">
             Reserve your room at least 14 days in advance and save up to 15%. Enjoy more for less at Heritage Hotels Arua!
           </p>
-          <h6 class="mb-0 mt-4"><a class="button" href="#">Book Now</a></h6>
+          <h6 class="mb-0 mt-4">
+            <a class="button" href="mailto:info@heritagehotelsug.com">Book Now</a>
+          </h6>
         </div>
       </div>
     </div>
@@ -911,15 +860,15 @@
 <section id="footer" class="p_3 bg_dark">
   <div class="container-xl">
     <div class="row footer_1">
-		<div class="col-md-3">
-			<div class="footer_1i d-flex align-items-start">
-			  <img src="img/logo.png" alt="Heritage Hotels Arua" class="logo-footer me-3">
-			  <p class="mb-0 text-light">
-				At Heritage Hotels, we pride ourselves on delivering exceptional hospitality and creating unforgettable experiences. Our philosophy is simple: every guest deserves our best, with a touch of elegance. We promise a home away from home.
-			  </p>
-			</div>
-		  </div>
-		  
+      <div class="col-md-3">
+        <div class="footer_1i d-flex align-items-start">
+          <img src="img/logo.png" alt="Heritage Hotels Arua" class="logo-footer me-3">
+          <p class="mb-0 text-light">
+            At Heritage Hotels, we pride ourselves on delivering exceptional hospitality and creating unforgettable experiences. 
+            Our philosophy is simple: every guest deserves our best, with a touch of elegance. We promise a home away from home.
+          </p>
+        </div>
+      </div>
       <div class="col-md-3">
         <div class="footer_1i">
           <h5 class="text-white mb-4">GALLERY</h5>
@@ -927,21 +876,21 @@
             <div class="col-md-4 pe-0 col-4">
               <div class="grid clearfix">
                 <figure class="effect-jazz mb-0">
-                  <a href="#"><img src="img/index_gallery_1.jpg" class="w-100" alt="gallery"></a>
+                  <a href="#"><img src="img/index_gallery_1.jpg" class="w-100" alt="gallery1"></a>
                 </figure>
               </div>
             </div>
             <div class="col-md-4 pe-0 col-4">
               <div class="grid clearfix">
                 <figure class="effect-jazz mb-0">
-                  <a href="#"><img src="img/index_gallery_2.jpg" class="w-100" alt="gallery"></a>
+                  <a href="#"><img src="img/index_gallery_2.jpg" class="w-100" alt="gallery2"></a>
                 </figure>
               </div>
             </div>
             <div class="col-md-4 pe-0 col-4">
               <div class="grid clearfix">
                 <figure class="effect-jazz mb-0">
-                  <a href="#"><img src="img/index_gallery_3.jpg" class="w-100" alt="gallery"></a>
+                  <a href="#"><img src="img/index_gallery_3.jpg" class="w-100" alt="gallery3"></a>
                 </figure>
               </div>
             </div>
@@ -950,42 +899,40 @@
             <div class="col-md-4 pe-0 col-4">
               <div class="grid clearfix">
                 <figure class="effect-jazz mb-0">
-                  <a href="#"><img src="img/index_gallery_4.jpg" class="w-100" alt="gallery"></a>
+                  <a href="#"><img src="img/index_gallery_4.jpg" class="w-100" alt="gallery4"></a>
                 </figure>
               </div>
             </div>
             <div class="col-md-4 pe-0 col-4">
               <div class="grid clearfix">
                 <figure class="effect-jazz mb-0">
-                  <a href="#"><img src="img/index_gallery_5.jpg" class="w-100" alt="gallery"></a>
+                  <a href="#"><img src="img/index_gallery_5.jpg" class="w-100" alt="gallery5"></a>
                 </figure>
               </div>
             </div>
             <div class="col-md-4 pe-0 col-4">
               <div class="grid clearfix">
                 <figure class="effect-jazz mb-0">
-                  <a href="#"><img src="img/index_gallery_6.jpg" class="w-100" alt="gallery"></a>
+                  <a href="#"><img src="img/index_gallery_6.jpg" class="w-100" alt="gallery6"></a>
                 </figure>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- CONTACT US -->
       <div class="col-md-3">
         <div class="footer_1i">
           <h5 class="text-white mb-3">CONTACT US</h5>
           <p class="text-light mb-2">Plot 24, Weatherhead Parklane, Arua</p>
-          <p class="text-light mb-2">
-            <span class="fw-bold">Tel:</span> +256 393274611
-          </p>
-          <p class="text-light mb-2">
-            <span class="fw-bold">Phone:</span> +256 772069207
-          </p>
+          <p class="text-light mb-2"><span class="fw-bold">Tel:</span> +256 393274611</p>
+          <p class="text-light mb-2"><span class="fw-bold">Phone:</span> +256 772069207</p>
           <p class="mb-0">
             <a class="text-light" href="mailto:info@heritagehotelsug.com">info@heritagehotelsug.com</a>
           </p>
         </div>
       </div>
+      <!-- NEWSLETTER -->
       <div class="col-md-3">
         <div class="footer_1i">
           <h5 class="text-white mb-3">STAY IN TOUCH</h5>
@@ -1008,7 +955,9 @@
       <div class="col-md-12">
         <p class="mb-0 text-light">
           © 2025 Heritage Hotels UG. All Rights Reserved | Design by
-          <a class="col_yell fw-bold" href="https://tavektechnologies.com/" target="_blank">Tavek Technologies LTD</a>
+          <a class="col_yell fw-bold" href="https://tavektechnologies.com/" target="_blank">
+            Tavek Technologies LTD
+          </a>
         </p>
       </div>
     </div>
@@ -1019,10 +968,13 @@
 <script>
   window.onscroll = function() {myFunction()};
   var navbar_sticky = document.getElementById("navbar_sticky");
-  var sticky = navbar_sticky.offsetTop;
-  var navbar_height = document.querySelector('.navbar').offsetHeight;
+  if(navbar_sticky) {
+    var sticky = navbar_sticky.offsetTop;
+    var navbar_height = document.querySelector('.navbar').offsetHeight;
+  }
 
   function myFunction() {
+    if (!navbar_sticky) return;
     if (window.pageYOffset >= sticky + navbar_height) {
       navbar_sticky.classList.add("sticky");
     } else {
@@ -1034,7 +986,3 @@
 
 </body>
 </html>
-
-
-
-

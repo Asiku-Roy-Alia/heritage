@@ -1,10 +1,4 @@
-/*
-Template Name: Hotells
-File: Layout CSS
-Author: TemplatesOnWeb
-Author URI: https://www.templateonweb.com/
-Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
-*/
+
 
 /*********************center****************/
 .carousel-caption{
@@ -25,6 +19,81 @@ bottom:-70px;
 bottom: 90px!important;
 }
 /*********************center_end****************/
+
+.top-bar {
+    background-color: #2F2B2B; /* match your brand’s dark color */
+    color: #fff;
+    padding: 0.4rem 0;
+    font-size: 0.9rem;
+  }
+  .top-bar .container-xl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-bar .contact-info {
+    display: flex;
+    gap: 1.5rem; /* space between items */
+    align-items: center;
+  }
+  .top-bar .contact-info i {
+    color: #ffd31d;
+    margin-right: 0.4rem;
+  }
+
+  /* 2) Main Nav */
+  .navbar {
+    background-color: #3A3333; /* or whichever dark you prefer */
+  }
+  .navbar .navbar-brand img {
+    max-height: 50px;
+  }
+  .navbar-nav .nav-link {
+    text-transform: uppercase; /* make menu text uppercase */
+    color: #fff !important;
+    font-size: 0.95rem;
+    margin-right: 1rem;
+  }
+  /* “Book Now” smaller */
+  .navbar-nav .nav-link.button {
+    background-color: #ffb324; /* your brand color or #ffd31d */
+    color: #000 !important;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin-left: 0.5rem;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' ... etc");
+    /* Or let it default to Bootstrap’s toggler icon */
+  }
+
+  /* ============ HERO SLIDER ZOOM ============ */
+  .carousel-item img {
+    transition: transform 10s ease;
+    transform: scale(1);
+  }
+  .carousel-item.active img {
+    transform: scale(1.05); /* slight zoom */
+  }
+
+  /* ============ GALLERY MULTI-ITEM CAROUSEL ============ */
+  .carousel-inner-rtl {
+    direction: rtl; /* so it slides from right to left */
+  }
+  .carousel-inner-rtl .carousel-item {
+    float: right; /* ensures correct float for RTL */
+  }
+  .gallery-slide img {
+    width: 100%; /* each col is smaller, so the images appear smaller */
+    border-radius: 4px;
+  }
+
+  /* ============ TESTIMONIAL EQUAL HEIGHT ============ */
+  .testim_1i1 {
+    min-height: 280px; /* uniform height for review boxes */
+  }
 
 /*********************serv****************/
 #serv{
