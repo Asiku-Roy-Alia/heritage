@@ -20,106 +20,92 @@
 
 <body>
 
-<div class="main_blog">
-  <div class="main_o1">
-    <!-- Top Section -->
-    <section id="top" class="pt-3 pb-3">
-      <div class="container-xl">
-        <div class="row top_1">
-          <!-- Phone / Logo / Socials -->
-          <div class="col-md-4">
-            <div class="top_1l">
-              <span class="d-inline-block bg_yell rounded-circle float-start me-2 text-center">
-                <a href="#"><i class="fa fa-phone text-white"></i></a>
-              </span>
-              <h6 class="mb-0 lh-base font_14">
-                <a class="text-white" href="#">
-                  For Inquiries: <br>
-                  +256 393274611
-                </a>
-              </h6>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="top_1m text-center mt-2">
-              <h3 class="mb-0">
-                <a href="index.html">
-                  <img src="img/logo.png" alt="Heritage Hotels Arua"
-                       class="img-fluid" style="max-height:50px;">
-                </a>
-              </h3>
-            </div>
-          </div>
-
-          </div>
+  <div class="top-bar">
+    <div class="container-xl">
+      <div class="contact-info">
+        <div>
+          <i class="fa fa-map-marker"></i> Plot 24, Weatherhead Parklane, Arua
+        </div>
+        <div>
+          <i class="fa fa-phone"></i> +256 393274611
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <a href="mailto:info@heritagehotelsug.com" class="text-white text-decoration-none">
+            info@heritagehotelsug.com
+          </a>
         </div>
       </div>
-    </section>
-
-
-    <!-- Navigation -->
-    <section id="header">
-      <nav class="navbar navbar-expand-md navbar-light pt-3 pb-3" id="navbar_sticky">
-        <div class="container-xl">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Main Menu (same as index.html) -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="accommodation.html">Accommodation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="restaurant.html">Restaurant</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="health_club.html">Health Club &amp; Spa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav mb-0 ms-auto">
-              <li class="nav-item">
-                <a class="nav-link button" href="mailto:info@heritagehotelsug.com">BOOK NOW</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </section>
-
-    <!-- Page Banner -->
-    <section id="center" class="center_o pt-4 pb-5">
-      <div class="container-xl">
-        <div class="row center_o1 text-center">
-          <div class="col-md-12">
-            <h2 class="text-white text-uppercase">Rooms</h2>
-            <h6 class="mb-0 mt-3 col_yell">
-              <a class="text-white" href="index.html">Home</a>
-              <span class="mx-2 text-muted">/</span> Rooms
-            </h6>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   </div>
-</div>
+
+
+  <nav class="navbar navbar-expand-md" id="navbar_sticky">
+    <div class="container-xl">
+      <!-- LOGO -->
+      <a class="navbar-brand p-0" href="index.html">
+        <img src="img/logo.png" alt="Heritage Hotels Arua" />
+      </a>
+  
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color:#fff;"></span>
+      </button>
+  
+      <!-- NAV LINKS -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- Make “About” active -->
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="accommodation.html">Accommodation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="restaurant.html">Restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="health_club.html">Health Club &amp; Spa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- “BOOK NOW” Button -->
+        <ul class="navbar-nav ms-2">
+          <li class="nav-item">
+            <a class="nav-link button" href="mailto:info@heritagehotelsug.com">Book Now</a>
+          </li>
+        </ul>
+      </div><!-- /.collapse -->
+    </div><!-- /.container-xl -->
+  </nav> 
+
+
+  <section class="center_home" style="background-color: #3A3138; padding: 60px 0;">
+    <div class="container-xl text-center text-white">
+      <h2 class="text-uppercase">About Us</h2>
+      <h6 class="mt-3">
+        <a class="text-white" href="index.html">Home</a>
+        <span class="mx-2 text-muted">/</span> Accommodation
+      </h6>
+    </div>
+  </section>
+
+
+
 
 <!-- ROOM LISTING SECTION -->
 <section id="room" class="p_3">
@@ -129,22 +115,74 @@
       <div class="col-md-8">
         <div class="room_1l">
           <!-- Check Rates Box -->
-          <div class="room_1l1 row bg-light p-4 px-3 mx-0">
-            <div class="col-md-7">
-              <div class="room_1l1l">
-                <input class="form-control border-0" id="example-date" type="date" name="date">
+          <!-- QUICK BOOKING BAR -->
+            <div class="main_3 clearfix w-100">
+              <section id="book_o">
+                <div class="container-xl">
+                  <div class="row book_1 p-5 px-4 shadow_box bg-white">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                      <div class="book_1i">
+                        <label for="checkInDate" class="form-label fw-bold">CHECK IN</label>
+                        <input class="form-control bg-light border-0"
+                              id="checkInDate"
+                              type="date"
+                              name="checkin">
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3 mb-md-0">
+                      <div class="book_1i">
+                        <label for="checkOutDate" class="form-label fw-bold">CHECK OUT</label>
+                        <input class="form-control bg-light border-0"
+                              id="checkOutDate"
+                              type="date"
+                              name="checkout">
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3 mb-md-0">
+                      <div class="book_1i">
+                        <label for="roomType" class="form-label fw-bold">ROOM TYPE</label>
+                        <select class="form-select bg-light border-0" id="roomType" aria-label="Room Type">
+                          <option selected value="">Select Room Type</option>
+                          <option value="single">Deluxe Single Room - UGX 150,000 ($40)</option>
+                          <option value="double">Deluxe Double Room - UGX 200,000 ($53)</option>
+                          <option value="twin">Deluxe Twin Room - UGX 250,000 ($66)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                      <div class="book_1i text-center">
+                        <button class="button_1 fw-bold w-100"
+                                data-bs-toggle="modal"
+                                data-bs-target="#rateModal"
+                                onclick="calculateRates()">
+                          Check Rates
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <!-- BOOTSTRAP MODAL FOR RESULTS -->
+            <div class="modal fade" id="rateModal" tabindex="-1"
+            aria-labelledby="rateModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="rateModalLabel">Booking Summary</h5>
+              <button type="button" class="btn-close"
+                      data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="modalContent">
+                <!-- Filled via JavaScript -->
               </div>
             </div>
-            <div class="col-md-5">
-              <div class="room_1l1r">
-                <h6 class="mb-0">
-                  <a class="button d-block text-center fw-bold" href="#detailSection">
-                    Check Rates
-                  </a>
-                </h6>
-              </div>
             </div>
-          </div>
+            </div>
+            </div>
+
 
           <!-- All Deluxe Rooms (Single, Double, Twin) -->
           <div class="room_2i row mt-4">
@@ -164,7 +202,7 @@
                   <!-- UGX 150,000 -->
                   <div class="room_2il1i1 text-center position-absolute w-100">
                     <span class="d-inline-block bg_yell text-white p-2 px-4">
-                      UGX 150,000
+                      UGX 150,000 ($40)
                     </span>
                   </div>
                 </div>
@@ -178,7 +216,7 @@
                   <hr>
                   <ul class="font_14 mb-0">
                     <li class="d-inline-block">
-                      <i class="fa fa-user me-1 col_yell"></i> 3 
+                      <i class="fa fa-user me-1 col_yell"></i> 1
                       <span class="text-muted mx-2">|</span>
                     </li>
                     <li class="d-inline-block">
@@ -186,7 +224,7 @@
                       <span class="text-muted mx-2">|</span>
                     </li>
                     <li class="d-inline-block">
-                      <i class="fa fa-square-o me-1 col_yell"></i> 78m²
+                      <i class="fa fa-square-o me-1 col_yell"></i> 16m²
                     </li>
                   </ul>
                 </div>
@@ -209,7 +247,7 @@
                   <!-- UGX 200,000 -->
                   <div class="room_2il1i1 text-center position-absolute w-100">
                     <span class="d-inline-block bg_yell text-white p-2 px-4">
-                      UGX 200,000
+                      UGX 200,000 ($53)
                     </span>
                   </div>
                 </div>
@@ -223,15 +261,15 @@
                   <hr>
                   <ul class="font_14 mb-0">
                     <li class="d-inline-block">
-                      <i class="fa fa-user me-1 col_yell"></i> 4 
+                      <i class="fa fa-user me-1 col_yell"></i> 2
                       <span class="text-muted mx-2">|</span>
                     </li>
                     <li class="d-inline-block">
-                      <i class="fa fa-bed me-1 col_yell"></i> 2 King 
+                      <i class="fa fa-bed me-1 col_yell"></i> 1 King 
                       <span class="text-muted mx-2">|</span>
                     </li>
                     <li class="d-inline-block">
-                      <i class="fa fa-square-o me-1 col_yell"></i> 82m²
+                      <i class="fa fa-square-o me-1 col_yell"></i> 20m²
                     </li>
                   </ul>
                 </div>
@@ -254,7 +292,7 @@
                   <!-- UGX 250,000 -->
                   <div class="room_2il1i1 text-center position-absolute w-100">
                     <span class="d-inline-block bg_yell text-white p-2 px-4">
-                      UGX 250,000
+                      UGX 250,000 ($66)
                     </span>
                   </div>
                 </div>
@@ -268,7 +306,7 @@
                   <hr>
                   <ul class="font_14 mb-0">
                     <li class="d-inline-block">
-                      <i class="fa fa-user me-1 col_yell"></i> 3 
+                      <i class="fa fa-user me-1 col_yell"></i> 4
                       <span class="text-muted mx-2">|</span>
                     </li>
                     <li class="d-inline-block">
@@ -276,7 +314,7 @@
                       <span class="text-muted mx-2">|</span>
                     </li>
                     <li class="d-inline-block">
-                      <i class="fa fa-square-o me-1 col_yell"></i> 86m²
+                      <i class="fa fa-square-o me-1 col_yell"></i> 24m²
                     </li>
                   </ul>
                 </div>
@@ -284,7 +322,6 @@
             </div>
           </div><!-- /row -->
 
-          <!-- (Optional) Pagination or More Rooms if you like -->
         </div><!-- /room_1l -->
       </div><!-- /col-md-8 -->
 
@@ -353,8 +390,7 @@
             </div>
           </div>
 
-          <!-- Archives Removed -->
-          <!-- (No “Archives” section is here anymore) -->
+
         </div><!-- /room_1r -->
       </div><!-- /col-md-4 -->
     </div><!-- /row -->
@@ -496,6 +532,92 @@
       document.body.style.paddingTop = '0';
     }
   }
+
+
+  function calculateRates() {
+  //  Gather user input
+  const checkIn = document.getElementById('checkInDate').value;
+  const checkOut = document.getElementById('checkOutDate').value;
+  const roomType = document.getElementById('roomType').value;
+
+  //  Basic validation
+  if(!checkIn || !checkOut || !roomType) {
+    document.getElementById('modalContent').innerHTML =
+      '<p class="text-danger">Please select Check-In Date, Check-Out Date, and Room Type.</p>';
+    return;
+  }
+
+  // Convert to Dates and compute difference
+  const inDate  = new Date(checkIn);
+  const outDate = new Date(checkOut);
+  const diffTime = outDate - inDate;
+  const diffDays = diffTime / (1000 * 3600 * 24);
+
+  if(diffDays <= 0) {
+    document.getElementById('modalContent').innerHTML =
+      '<p class="text-danger">Check-Out date must be after Check-In date.</p>';
+    return;
+  }
+
+  // Determine room info
+  let roomName = '';
+  let costPerNight = 0;
+  let roomImg = '';
+  switch(roomType) {
+    case 'single':
+      roomName = 'Deluxe Single Room';
+      costPerNight = 150000;
+      roomImg = 'img/Deluxe_single.jpg';
+      break;
+    case 'double':
+      roomName = 'Deluxe Double Room';
+      costPerNight = 200000;
+      roomImg = 'img/Delux_double.jpg';
+      break;
+    case 'twin':
+      roomName = 'Deluxe Twin Room';
+      costPerNight = 250000;
+      roomImg = 'img/Deluxe_twin.jpg';
+      break;
+    default:
+      document.getElementById('modalContent').innerHTML =
+        '<p class="text-danger">Invalid room type.</p>';
+      return;
+  }
+
+  //  Calculate total cost
+  const totalCost = costPerNight * diffDays;
+
+  //  Build the HTML for the modal
+  const resultHTML = `
+    <div class="row">
+      <div class="col-md-6">
+        <img src="${roomImg}"
+             alt="${roomName}"
+             class="img-fluid w-100 mb-3">
+      </div>
+      <div class="col-md-6">
+        <h5 class="mb-3">${roomName}</h5>
+        <p class="text-danger fw-bold">ROOM AVAILABLE</p>
+        <p>Number of Nights: <strong>${diffDays}</strong></p>
+        <p>Total Cost: <strong>UGX ${totalCost.toLocaleString()}</strong></p>
+        <p class="font_14 text-muted">
+          Proceed to email
+          <a href="mailto:info@heritagehotelsug.com"><strong>info@heritagehotelsug.com</strong></a>
+          to complete your booking.
+        </p>
+        <button type="button" class="btn btn-secondary"
+                data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  `;
+
+  //  Insert into modalContent
+  document.getElementById('modalContent').innerHTML = resultHTML;
+}
+
 </script>
 
 </body>

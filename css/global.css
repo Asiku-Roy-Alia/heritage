@@ -463,6 +463,253 @@ background-color:#5c4e5a;
 
 
 
+/*********************center****************/
+.carousel-caption{
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top:320px;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:100%;
+   }
+  .center_home img{
+  min-height:700px;
+   }
+  .main_3{
+  bottom:-70px; 
+   }
+  .center_home .carousel-indicators {
+  bottom: 90px!important;
+  }
+  /*********************center_end****************/
+  
+  .top-bar {
+      background-color: #2F2B2B; /* match your brand’s dark color */
+      color: #fff;
+      padding: 0.4rem 0;
+      font-size: 0.9rem;
+    }
+    .top-bar .container-xl {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .top-bar .contact-info {
+      display: flex;
+      gap: 1.5rem; /* space between items */
+      align-items: center;
+    }
+    .top-bar .contact-info i {
+      color: #ffd31d;
+      margin-right: 0.4rem;
+    }
+  
+    /* 2) Main Nav */
+    .navbar {
+      background-color: #3A3333; /* or whichever dark you prefer */
+    }
+    .navbar .navbar-brand img {
+      max-height: 50px;
+    }
+    .navbar-nav .nav-link {
+      text-transform: uppercase; /* make menu text uppercase */
+      color: #fff !important;
+      font-size: 0.95rem;
+      margin-right: 1rem;
+    }
+    /* “Book Now” smaller */
+    .navbar-nav .nav-link.button {
+      background-color: #ffb324; /* your brand color or #ffd31d */
+      color: #000 !important;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      margin-left: 0.5rem;
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' ... etc");
+      /* Or let it default to Bootstrap’s toggler icon */
+    }
+  
+    /* ============ HERO SLIDER ZOOM ============ */
+    .carousel-item img {
+      transition: transform 10s ease;
+      transform: scale(1);
+    }
+    .carousel-item.active img {
+      transform: scale(1.05); /* slight zoom */
+    }
+  
+    /* ============ GALLERY MULTI-ITEM CAROUSEL ============ */
+    .carousel-inner-rtl {
+      direction: rtl; /* so it slides from right to left */
+    }
+    .carousel-inner-rtl .carousel-item {
+      float: right; /* ensures correct float for RTL */
+    }
+    .gallery-slide img {
+      width: 100%; /* each col is smaller, so the images appear smaller */
+      border-radius: 4px;
+    }
+  
+    /* ============ TESTIMONIAL EQUAL HEIGHT ============ */
+    .testim_1i1 {
+      min-height: 280px; /* uniform height for review boxes */
+    }
+  
+  /*********************serv****************/
+  #serv{
+  margin-top:70px; 
+   }
+  .serv_2r span a{
+  width:40px;
+  height:40px;
+  line-height:38px;
+  border:1px solid #ffac41;
+  transition: 0.3s;
+   }
+  .serv_2r span a:hover{
+  background:#ffac41;
+  color:#fff!important;
+   }
+  .serv_2r{
+  padding:60px 30px; 
+   }
+  .serv_2r{
+  min-height:310px; 
+   }
+  .serv_2l img{
+  min-height:310px; 
+   }
+  /*********************serv_end****************/
+  
+  /*********************room****************/
+  .room_1 .nav-tabs .nav-link {
+  border: none;
+  padding: 10px 20px;
+  color:#fff;
+  }
+  .room_1 .nav-tabs .nav-link:hover {
+  font-weight:bold;
+  border-bottom:2px solid  #ffac41;
+  }
+  .room_1 .nav-tabs .nav-link.active {
+  border-bottom:2px solid  #ffac41;
+  background:none;
+  }
+  
+  /*********************room_end****************/
+  
+  /*********************choose****************/
+  .choose_1i span{
+  width:160px;
+  height:160px;
+  line-height:160px;
+  transition: 0.3s; 
+   }
+  .choose_1i span:hover{
+  color:#ffac41;
+   }
+  /*********************choose_end****************/
+  
+  
+  @media screen and (max-width : 767px){
+  .main_3 {
+  position:static!important;
+  }
+  .center_home br{
+  display:none; 
+   }
+  .center_home img{
+  min-height:350px;
+   }
+  .center_home .font_60{
+  font-size:24px;
+   }
+  .carousel-caption {
+  padding:90px 10px 0px 10px;
+  }
+  .carousel-caption .button{
+  padding-left:12px;
+  padding-right:12px;
+  }
+  .carousel-caption .button_1{
+  padding-left:12px;
+  padding-right:12px;
+  }
+  .center_home p{
+  font-size:13px;
+  text-align:left;
+   }
+  .center_home .carousel-indicators {
+  bottom: 0!important;
+  }
+  .book_1i{
+  margin-top:8px;
+  margin-bottom:8px; 
+   }
+  #serv {
+  margin-top:0;
+  }
+  .serv_2r {
+  min-height:auto;
+  padding:15px;
+  }
+  .serv_2r p{
+  text-align:left;
+  }
+  .serv_2{
+  margin-top:15px;
+   }
+  .room_1 .nav-tabs .nav-link {
+  padding: 10px 10px;
+  font-size:14px;
+  }
+  .choose_1i {
+  margin-top:8px;
+  margin-bottom:8px; 
+   }
+  .connect_1ri {
+  text-align:center; 
+   }
+  .connect_1rir{
+  margin-top:10px; 
+   }
+  .serv_2l img{
+  min-height:auto; 
+   }
+   }
+  
+  @media (min-width:576px) and (max-width:767px) {
+  
+   }
+  @media (min-width:768px) and (max-width:991px) {
+  .book_1i .button_1{
+  padding-left:10px;
+  padding-right:10px; 
+   }
+  .serv_2r {
+  padding: 45px 30px;
+  }
+  .connect_1l {
+  padding:10px!important; 
+   }
+  .connect_1ril span{
+  font-size:24px!important; 
+   }
+   }
+  
+  @media (min-width:992px) and (max-width:1200px) {
+  .connect_1ril span{
+  font-size:28px!important; 
+   }
+   }
+  @media (min-width:1201px) and (max-width:1360px) {
+  
+   }
+    
+
 @media screen and (max-width : 767px){
 .navbar-collapse{
 max-height:300px;

@@ -20,105 +20,90 @@
 
 <body>
 
-<!-- MAIN WRAPPER -->
-<div class="main_blog">
-
-  <!-- TOP BAR & NAVBAR -->
-  <div class="main_o1">
-    <!-- Top bar -->
-    <section id="top" class="pt-3 pb-3">
-      <div class="container-xl">
-        <div class="row top_1">
-          <!-- Left: Phone inquiry -->
-          <div class="col-md-4">
-            <div class="top_1l">
-              <span class="d-inline-block bg_yell rounded-circle float-start me-2 text-center">
-                <a href="#"><i class="fa fa-phone text-white"></i></a>
-              </span>
-              <h6 class="mb-0 lh-base font_14">
-                <a class="text-white" href="#">
-                  For Inquiries: <br>
-                  +256 393274611
-                </a>
-              </h6>
-            </div>
-          </div>
-          <!-- Center: Logo -->
-          <div class="col-md-4">
-            <div class="top_1m text-center mt-2">
-              <h3 class="mb-0">
-                <a href="index.html">
-                  <img src="img/logo.png" alt="Heritage Hotels Arua" class="img-fluid" style="max-height:50px;">
-                </a>
-              </h3>
-            </div>
-          </div>
+  <div class="top-bar">
+    <div class="container-xl">
+      <div class="contact-info">
+        <div>
+          <i class="fa fa-map-marker"></i> Plot 24, Weatherhead Parklane, Arua
+        </div>
+        <div>
+          <i class="fa fa-phone"></i> +256 393274611
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <a href="mailto:info@heritagehotelsug.com" class="text-white text-decoration-none">
+            info@heritagehotelsug.com
+          </a>
         </div>
       </div>
-    </section>
-
-    <!-- Main Navigation -->
-    <section id="header">
-      <nav class="navbar navbar-expand-md navbar-light pt-3 pb-3" id="navbar_sticky">
-        <div class="container-xl">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="accommodation.html">Accommodation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="restaurant.html">Restaurant</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="health_club.html">Health Club &amp; Spa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav mb-0 ms-auto">
-              <li class="nav-item">
-                <a class="nav-link button" href="mailto:info@heritagehotelsug.com">BOOK NOW</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </section>
-
-    <!-- Banner -->
-    <section id="center" class="center_o pt-4 pb-5">
-      <div class="container-xl">
-        <div class="row center_o1 text-center">
-          <div class="col-md-12">
-            <h2 class="text-white">BLOG</h2>
-            <h6 class="mb-0 mt-3 col_yell">
-              <a class="text-white" href="index.html">Home</a>
-              <span class="mx-2 text-muted">/</span> Blog
-            </h6>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   </div>
-</div>
+
+
+  <nav class="navbar navbar-expand-md" id="navbar_sticky">
+    <div class="container-xl">
+      <!-- LOGO -->
+      <a class="navbar-brand p-0" href="index.html">
+        <img src="img/logo.png" alt="Heritage Hotels Arua" />
+      </a>
+  
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color:#fff;"></span>
+      </button>
+  
+      <!-- NAV LINKS -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- Make “About” active -->
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="accommodation.html">Accommodation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="restaurant.html">Restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="health_club.html">Health Club &amp; Spa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- “BOOK NOW” Button -->
+        <ul class="navbar-nav ms-2">
+          <li class="nav-item">
+            <a class="nav-link button" href="mailto:info@heritagehotelsug.com">Book Now</a>
+          </li>
+        </ul>
+      </div><!-- /.collapse -->
+    </div><!-- /.container-xl -->
+  </nav> 
+
+
+  <section class="center_home" style="background-color: #3A3138; padding: 60px 0;">
+    <div class="container-xl text-center text-white">
+      <h2 class="text-uppercase">About Us</h2>
+      <h6 class="mt-3">
+        <a class="text-white" href="index.html">Home</a>
+        <span class="mx-2 text-muted">/</span> Blog
+      </h6>
+    </div>
+  </section>
+
 
 <!-- BLOG CONTENT -->
 <section id="blog" class="p_3">
@@ -140,7 +125,7 @@
                   </div>
                 </div>
                 <div class="blog_1l1li1 text-end position-absolute w-100 top-0">
-                  <h6 class="mb-0 d-inline-block bg_yell p-3 text-white px-4">Aug 15, 2025</h6>
+                  <h6 class="mb-0 d-inline-block bg_yell p-3 text-white px-4">Aug 15, 2024</h6>
                 </div>
               </div>
             </div>
@@ -168,7 +153,7 @@
                   </div>
                 </div>
                 <div class="blog_1l1li1 text-end position-absolute w-100 top-0">
-                  <h6 class="mb-0 d-inline-block bg_yell p-3 text-white px-4">Jul 28, 2025</h6>
+                  <h6 class="mb-0 d-inline-block bg_yell p-3 text-white px-4">Jul 28, 2024</h6>
                 </div>
               </div>
             </div>
@@ -201,7 +186,7 @@
           <div class="blog_1dt1 row">
             <div class="col-md-3">
               <div class="blog_1dt1l bg_yell p-4 text-center">
-                <h6 class="mb-0 text-white fw-bold">June 21, 2025</h6>
+                <h6 class="mb-0 text-white fw-bold">June 21, 2024</h6>
               </div>
             </div>
             <div class="col-md-9">
@@ -312,7 +297,7 @@
                 <div class="col-md-10 col-10">
                   <div class="blog_1dt3ir">
                     <h5>Inno King</h5>
-                    <h6 class="font_14 mt-3 fw-normal"><i class="fa fa-calendar col_yell me-1"></i> October 21, 2025</h6>
+                    <h6 class="font_14 mt-3 fw-normal"><i class="fa fa-calendar col_yell me-1"></i> October 21, 2024</h6>
                     <p class="fs-6 mb-0">
                       “Heritage court's apartment is the best to accommodate you and it has a gym, steam bath, sauna, and a kid's playing ground.”
                     </p>
@@ -329,7 +314,7 @@
                 <div class="col-md-10 col-10">
                   <div class="blog_1dt3ir">
                     <h5>Juliet Namukasa</h5>
-                    <h6 class="font_14 mt-3 fw-normal"><i class="fa fa-calendar col_yell me-1"></i> October 24, 2025</h6>
+                    <h6 class="font_14 mt-3 fw-normal"><i class="fa fa-calendar col_yell me-1"></i> October 24, 2024</h6>
                     <p class="fs-6 mb-0">
                       “This simple but beautiful place has been my other home since 2014. Slightly out of the city center with its noise. It has affordable conference halls, neat accommodation, and good food...”
                     </p>
@@ -346,7 +331,7 @@
                 <div class="col-md-10 col-10">
                   <div class="blog_1dt3ir">
                     <h5>Humphrey Ogwang</h5>
-                    <h6 class="font_14 mt-3 fw-normal"><i class="fa fa-calendar col_yell me-1"></i> October 26, 2025</h6>
+                    <h6 class="font_14 mt-3 fw-normal"><i class="fa fa-calendar col_yell me-1"></i> October 26, 2024</h6>
                     <p class="fs-6 mb-0">
                       “Always looking forward to aerobics and gym classes. It’s perhaps my best aerobics spot in the country. The coach is passionate and professional.”
                     </p>
