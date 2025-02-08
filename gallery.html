@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Browse our photo gallery and experience Heritage Hotels Arua — rooms, gardens, cuisine, and more.">
+  <meta name="description" content="Browse our photo gallery for Heritage Hotels UG — featuring Facilities (f_), Conferences (a_), and Events (b_).">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gallery | Heritage Hotels UG</title>
 
@@ -11,9 +11,9 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/global.css" rel="stylesheet">
-  <!-- (Optional) Additional gallery.css if you like, or reuse about.css if needed -->
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
 
+  <!-- Favicons & Manifest -->
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -24,6 +24,16 @@
 
   <!-- Bootstrap JS -->
   <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Inline CSS for uniform thumbnail sizes -->
+  <style>
+    /* Uniform height so images align nicely */
+    .gallery-img {
+      width: 100%;
+      height: 180px; /* Adjust as you like */
+      object-fit: cover;
+    }
+  </style>
 </head>
 
 <body>
@@ -61,36 +71,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="accommodation.html">Rooms</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="restaurant.html">Restaurant</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="health_club.html">Health Club &amp; Spa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="services.html">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <!-- Make "Gallery" link active on this page -->
-        <li class="nav-item">
-          <a class="nav-link active" href="gallery.html">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="accommodation.html">Rooms</a></li>
+        <li class="nav-item"><a class="nav-link" href="restaurant.html">Restaurant</a></li>
+        <li class="nav-item"><a class="nav-link" href="health_club.html">Health Club &amp; Spa</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <!-- Make "Gallery" link active -->
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
-      <!-- Book Now Button -->
       <ul class="navbar-nav ms-2">
         <li class="nav-item">
           <a class="nav-link button" href="mailto:info@heritagehotelsug.com">Book Now</a>
@@ -111,204 +102,1273 @@
   </div>
 </section>
 
-<!-- GALLERY COLLAGE -->
+<!-- GALLERY SECTION -->
 <section id="gallery" class="p_3">
   <div class="container-xl">
     <div class="row mb-4">
       <div class="col-md-12">
         <h1 class="mb-3">Capture the Heritage Experience</h1>
         <p class="mb-5">
-          Explore our comfortable rooms, lush gardens, and enticing restaurant through this photo collection. Click any image to enlarge.
+          Enjoy a glimpse of our facilities, conference rooms, events areas, health club, kids' park, dining experiences, and accommodation areas. Click a thumbnail to enlarge.
         </p>
       </div>
     </div>
-    
-    <!-- Masonry-like grid using Bootstrap’s row + col classes -->
+
+    <!-- SINGLE .row => 4 images per row on md+ screens -->
     <div class="row g-4">
-      <!-- IMAGE 1 -->
-      <div class="col-md-3 col-sm-6">
-        <figure class="position-relative mb-0">
-          <a data-bs-toggle="modal" data-bs-target="#modalImg1">
-            <img src="img/gallery_1.jpg" alt="Gallery 1" class="w-100">
-          </a>
-        </figure>
-      </div>
-      <!-- Modal 1 -->
-      <div class="modal fade" id="modalImg1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-black" id="modalLabel1">Gallery 1</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="img/gallery_1.jpg" alt="Gallery 1 Large" class="w-100">
-            </div>
-          </div>
-        </div>
-      </div>
       
-      <!-- IMAGE 2 -->
+
+  <!-- f_a.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFA">
+        <img src="img/f_a.jpg" alt="f_a.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFA" tabindex="-1" aria-labelledby="modalFALabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFALabel">f_a.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_a.jpg" alt="f_a Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- f_b.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFB">
+        <img src="img/f_b.jpg" alt="f_b.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFB" tabindex="-1" aria-labelledby="modalFBLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFBLabel">f_b.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_b.jpg" alt="f_b Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- f_b_1.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFB1">
+        <img src="img/f_b_1.jpg" alt="f_b_1.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFB1" tabindex="-1" aria-labelledby="modalFB1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFB1Label">f_b_1.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_b_1.jpg" alt="f_b_1 Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- f_c.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFC">
+        <img src="img/f_c.jpg" alt="f_c.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFC" tabindex="-1" aria-labelledby="modalFCLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFCLabel">f_c.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_c.jpg" alt="f_c Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- f_d.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFD">
+        <img src="img/f_d.jpg" alt="f_d.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFD" tabindex="-1" aria-labelledby="modalFDLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFDLabel">f_d.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_d.jpg" alt="f_d Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- f_f_1.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFF1">
+        <img src="img/f_f_1.jpg" alt="f_f_1.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFF1" tabindex="-1" aria-labelledby="modalFF1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFF1Label">f_f_1.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_f_1.jpg" alt="f_f_1 Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- f_g.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFG">
+        <img src="img/f_g.jpg" alt="f_g.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFG" tabindex="-1" aria-labelledby="modalFGLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFGLabel">f_g.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_g.jpg" alt="f_g Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- f_h.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFH">
+        <img src="img/f_h.jpg" alt="f_h.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFH" tabindex="-1" aria-labelledby="modalFHLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFHLabel">f_h.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_h.jpg" alt="f_h Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- f_i.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFI2">
+        <img src="img/f_i.jpg" alt="f_i.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFI2" tabindex="-1" aria-labelledby="modalFI2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFI2Label">f_i.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_i.jpg" alt="f_i Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- f_j.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFJ2">
+        <img src="img/f_j.jpg" alt="f_j.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFJ2" tabindex="-1" aria-labelledby="modalFJ2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFJ2Label">f_j.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_j.jpg" alt="f_j Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- f_j_1.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFJ1">
+        <img src="img/f_j_1.jpg" alt="f_j_1.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFJ1" tabindex="-1" aria-labelledby="modalFJ1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFJ1Label">f_j_1.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_j_1.jpg" alt="f_j_1 Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- f_k.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFK">
+        <img src="img/f_k.jpg" alt="f_k.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFK" tabindex="-1" aria-labelledby="modalFKLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFKLabel">f_k.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_k.jpg" alt="f_k Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- f_l.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFL">
+        <img src="img/f_l.jpg" alt="f_l.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFL" tabindex="-1" aria-labelledby="modalFLLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFLLabel">f_l.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_l.jpg" alt="f_l Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- f_m.jpg -->
+  <div class="col-md-3 col-sm-6">
+    <figure>
+      <a data-bs-toggle="modal" data-bs-target="#modalFM">
+        <img src="img/f_m.jpg" alt="f_m.jpg" class="gallery-img">
+      </a>
+    </figure>
+  </div>
+  <div class="modal fade" id="modalFM" tabindex="-1" aria-labelledby="modalFMLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="modalFMLabel">f_m.jpg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/f_m.jpg" alt="f_m Large" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <!-- a_a.jpg -->
       <div class="col-md-3 col-sm-6">
-        <figure class="position-relative mb-0">
-          <a data-bs-toggle="modal" data-bs-target="#modalImg2">
-            <img src="img/gallery_2.jpg" alt="Gallery 2" class="w-100">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalAA">
+            <img src="img/a_a.jpg" alt="Conference a_a" class="gallery-img">
           </a>
         </figure>
       </div>
-      <!-- Modal 2 -->
-      <div class="modal fade" id="modalImg2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+      <div class="modal fade" id="modalAA" tabindex="-1" aria-labelledby="modalAALabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-black" id="modalLabel2">Gallery 2</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title text-black" id="modalAALabel">Conference: a_a.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-              <img src="img/gallery_2.jpg" alt="Gallery 2 Large" class="w-100">
+              <img src="img/a_a.jpg" alt="a_a Large" class="w-100">
             </div>
           </div>
         </div>
       </div>
 
-      <!-- IMAGE 3 -->
+      <!-- a_b.jpg -->
       <div class="col-md-3 col-sm-6">
-        <figure class="position-relative mb-0">
-          <a data-bs-toggle="modal" data-bs-target="#modalImg3">
-            <img src="img/gallery_3.jpg" alt="Gallery 3" class="w-100">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalAB">
+            <img src="img/a_b.jpg" alt="Conference a_b" class="gallery-img">
           </a>
         </figure>
       </div>
-      <!-- Modal 3 -->
-      <div class="modal fade" id="modalImg3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+      <div class="modal fade" id="modalAB" tabindex="-1" aria-labelledby="modalABLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-black" id="modalLabel3">Gallery 3</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title text-black" id="modalABLabel">Conference: a_b.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-              <img src="img/gallery_3.jpg" alt="Gallery 3 Large" class="w-100">
+              <img src="img/a_b.jpg" alt="a_b Large" class="w-100">
             </div>
           </div>
         </div>
       </div>
 
-      <!-- IMAGE 4 -->
+      <!-- a_c.jpg -->
       <div class="col-md-3 col-sm-6">
-        <figure class="position-relative mb-0">
-          <a data-bs-toggle="modal" data-bs-target="#modalImg4">
-            <img src="img/gallery_4.jpg" alt="Gallery 4" class="w-100">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalAC">
+            <img src="img/a_c.jpg" alt="Conference a_c" class="gallery-img">
           </a>
         </figure>
       </div>
-      <!-- Modal 4 -->
-      <div class="modal fade" id="modalImg4" tabindex="-1" aria-labelledby="modalLabel4" aria-hidden="true">
+      <div class="modal fade" id="modalAC" tabindex="-1" aria-labelledby="modalACLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-black" id="modalLabel4">Gallery 4</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title text-black" id="modalACLabel">Conference: a_c.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-              <img src="img/gallery_4.jpg" alt="Gallery 4 Large" class="w-100">
+              <img src="img/a_c.jpg" alt="a_c Large" class="w-100">
             </div>
           </div>
         </div>
       </div>
 
-      <!-- IMAGE 5 -->
+      <!-- b_a.jpg -->
       <div class="col-md-3 col-sm-6">
-        <figure class="position-relative mb-0">
-          <a data-bs-toggle="modal" data-bs-target="#modalImg5">
-            <img src="img/gallery_5.jpg" alt="Gallery 5" class="w-100">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalBA">
+            <img src="img/b_a.jpg" alt="Events b_a" class="gallery-img">
           </a>
         </figure>
       </div>
-      <!-- Modal 5 -->
-      <div class="modal fade" id="modalImg5" tabindex="-1" aria-labelledby="modalLabel5" aria-hidden="true">
+      <div class="modal fade" id="modalBA" tabindex="-1" aria-labelledby="modalBALabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-black" id="modalLabel5">Gallery 5</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title text-black" id="modalBALabel">Events: b_a.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-              <img src="img/gallery_5.jpg" alt="Gallery 5 Large" class="w-100">
+              <img src="img/b_a.jpg" alt="b_a Large" class="w-100">
             </div>
           </div>
         </div>
       </div>
 
-      <!-- IMAGE 6 -->
+      <!-- b_b.jpg -->
       <div class="col-md-3 col-sm-6">
-        <figure class="position-relative mb-0">
-          <a data-bs-toggle="modal" data-bs-target="#modalImg6">
-            <img src="img/gallery_6.jpg" alt="Gallery 6" class="w-100">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalBB">
+            <img src="img/b_b.jpg" alt="Events b_b" class="gallery-img">
           </a>
         </figure>
       </div>
-      <!-- Modal 6 -->
-      <div class="modal fade" id="modalImg6" tabindex="-1" aria-labelledby="modalLabel6" aria-hidden="true">
+      <div class="modal fade" id="modalBB" tabindex="-1" aria-labelledby="modalBBLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-black" id="modalLabel6">Gallery 6</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title text-black" id="modalBBLabel">Events: b_b.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-              <img src="img/gallery_6.jpg" alt="Gallery 6 Large" class="w-100">
+              <img src="img/b_b.jpg" alt="b_b Large" class="w-100">
             </div>
           </div>
         </div>
       </div>
 
-      <!-- IMAGE 7 -->
+      <!-- b_c.jpg -->
       <div class="col-md-3 col-sm-6">
-        <figure class="position-relative mb-0">
-          <a data-bs-toggle="modal" data-bs-target="#modalImg7">
-            <img src="img/Restaurant.jpg" alt="Gallery 7" class="w-100">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalBC">
+            <img src="img/b_c.jpg" alt="Events b_c" class="gallery-img">
           </a>
         </figure>
       </div>
-      <!-- Modal 7 -->
-      <div class="modal fade" id="modalImg7" tabindex="-1" aria-labelledby="modalLabel7" aria-hidden="true">
+      <div class="modal fade" id="modalBC" tabindex="-1" aria-labelledby="modalBCLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-black" id="modalLabel7">Gallery 7</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title text-black" id="modalBCLabel">Events: b_c.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-              <img src="img/Restaurant.jpg" alt="Gallery 7 Large" class="w-100">
+              <img src="img/b_c.jpg" alt="b_c Large" class="w-100">
             </div>
           </div>
         </div>
       </div>
 
-      <!-- IMAGE 8 -->
+      <!-- b_d.jpg -->
       <div class="col-md-3 col-sm-6">
-        <figure class="position-relative mb-0">
-          <a data-bs-toggle="modal" data-bs-target="#modalImg8">
-            <img src="img/Meeting-set.jpg" alt="Gallery 8" class="w-100">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalBD">
+            <img src="img/b_d.jpg" alt="Events b_d" class="gallery-img">
           </a>
         </figure>
       </div>
-      <!-- Modal 8 -->
-      <div class="modal fade" id="modalImg8" tabindex="-1" aria-labelledby="modalLabel8" aria-hidden="true">
+      <div class="modal fade" id="modalBD" tabindex="-1" aria-labelledby="modalBDLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-black" id="modalLabel8">Gallery 8</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title text-black" id="modalBDLabel">Events: b_d.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-              <img src="img/Meeting-set.jpg" alt="Gallery 8 Large" class="w-100">
+              <img src="img/b_d.jpg" alt="b_d Large" class="w-100">
             </div>
           </div>
         </div>
       </div>
-    </div><!-- /row g-4 -->
+
+      <!-- b_e.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalBE">
+            <img src="img/b_e.jpg" alt="Events b_e" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalBE" tabindex="-1" aria-labelledby="modalBELabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalBELabel">Events: b_e.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/b_e.jpg" alt="b_e Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ========================= -->
+      <!--   IMAGES STARTING WITH C  -->
+      <!-- ========================= -->
+
+      <!-- c_a.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCA">
+            <img src="img/c_a.jpg" alt="Category c_a" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCA" tabindex="-1" aria-labelledby="modalCALabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCALabel">Category: c_a.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_a.jpg" alt="c_a Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_d.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCD">
+            <img src="img/c_d.jpg" alt="Category c_d" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCD" tabindex="-1" aria-labelledby="modalCDLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCDLabel">Category: c_d.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_d.jpg" alt="c_d Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_e_1.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCE1">
+            <img src="img/c_e_1.jpg" alt="Category c_e_1" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCE1" tabindex="-1" aria-labelledby="modalCE1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCE1Label">Category: c_e_1.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_e_1.jpg" alt="c_e_1 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_e_2.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCE2">
+            <img src="img/c_e_2.jpg" alt="Category c_e_2" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCE2" tabindex="-1" aria-labelledby="modalCE2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCE2Label">Category: c_e_2.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_e_2.jpg" alt="c_e_2 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_f.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCF">
+            <img src="img/c_f.jpg" alt="Category c_f" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCF" tabindex="-1" aria-labelledby="modalCFLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCFLabel">Category: c_f.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_f.jpg" alt="c_f Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_g_1.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCG1">
+            <img src="img/c_g_1.jpg" alt="Category c_g_1" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCG1" tabindex="-1" aria-labelledby="modalCG1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCG1Label">Category: c_g_1.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_g_1.jpg" alt="c_g_1 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_g_2.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCG2">
+            <img src="img/c_g_2.jpg" alt="Category c_g_2" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCG2" tabindex="-1" aria-labelledby="modalCG2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCG2Label">Category: c_g_2.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_g_2.jpg" alt="c_g_2 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_h.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCH">
+            <img src="img/c_h.jpg" alt="Category c_h" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCH" tabindex="-1" aria-labelledby="modalCHLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCHLabel">Category: c_h.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_h.jpg" alt="c_h Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- c_j.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCJ">
+            <img src="img/c_j.jpg" alt="Category c_j" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCJ" tabindex="-1" aria-labelledby="modalCJLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCJLabel">Category: c_j.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_j.jpg" alt="c_j Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_k.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCK">
+            <img src="img/c_k.jpg" alt="Category c_k" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCK" tabindex="-1" aria-labelledby="modalCKLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCKLabel">Category: c_k.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_k.jpg" alt="c_k Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_l_1.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCL1">
+            <img src="img/c_l_1.jpg" alt="Category c_l_1" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCL1" tabindex="-1" aria-labelledby="modalCL1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCL1Label">Category: c_l_1.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_l_1.jpg" alt="c_l_1 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_l_2.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCL2">
+            <img src="img/c_l_2.jpg" alt="Category c_l_2" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCL2" tabindex="-1" aria-labelledby="modalCL2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCL2Label">Category: c_l_2.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_l_2.jpg" alt="c_l_2 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_m.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCM">
+            <img src="img/c_m.jpg" alt="Category c_m" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCM" tabindex="-1" aria-labelledby="modalCMLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCMLabel">Category: c_m.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_m.jpg" alt="c_m Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_n.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCN">
+            <img src="img/c_n.jpg" alt="Category c_n" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCN" tabindex="-1" aria-labelledby="modalCNLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCNLabel">Category: c_n.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_n.jpg" alt="c_n Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_o_0.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCO0">
+            <img src="img/c_o_0.jpg" alt="Category c_o_0" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCO0" tabindex="-1" aria-labelledby="modalCO0Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCO0Label">Category: c_o_0.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_o_0.jpg" alt="c_o_0 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- c_o_2.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCO2">
+            <img src="img/c_o_2.jpg" alt="Category c_o_2" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCO2" tabindex="-1" aria-labelledby="modalCO2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCO2Label">Category: c_o_2.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_o_2.jpg" alt="c_o_2 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_o_3.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCO3">
+            <img src="img/c_o_3.jpg" alt="Category c_o_3" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCO3" tabindex="-1" aria-labelledby="modalCO3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCO3Label">Category: c_o_3.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_o_3.jpg" alt="c_o_3 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_o_4.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCO4">
+            <img src="img/c_o_4.jpg" alt="Category c_o_4" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCO4" tabindex="-1" aria-labelledby="modalCO4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCO4Label">Category: c_o_4.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_o_4.jpg" alt="c_o_4 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_p_0.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCP0">
+            <img src="img/c_p_0.jpg" alt="Category c_p_0" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCP0" tabindex="-1" aria-labelledby="modalCP0Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCP0Label">Category: c_p_0.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_p_0.jpg" alt="c_p_0 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_p_1.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCP1">
+            <img src="img/c_p_1.jpg" alt="Category c_p_1" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCP1" tabindex="-1" aria-labelledby="modalCP1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCP1Label">Category: c_p_1.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_p_1.jpg" alt="c_p_1 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_p_2.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCP2">
+            <img src="img/c_p_2.jpg" alt="Category c_p_2" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCP2" tabindex="-1" aria-labelledby="modalCP2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCP2Label">Category: c_p_2.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_p_2.jpg" alt="c_p_2 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_p_3.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCP3">
+            <img src="img/c_p_3.jpg" alt="Category c_p_3" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCP3" tabindex="-1" aria-labelledby="modalCP3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCP3Label">Category: c_p_3.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_p_3.jpg" alt="c_p_3 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c_p_4.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalCP4">
+            <img src="img/c_p_4.jpg" alt="Category c_p_4" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalCP4" tabindex="-1" aria-labelledby="modalCP4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalCP4Label">Category: c_p_4.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/c_p_4.jpg" alt="c_p_4 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================= -->
+      <!--   IMAGES STARTING WITH D  -->
+      <!-- ========================= -->
+
+      <!-- d_b.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalDB">
+            <img src="img/d_b.jpg" alt="Category d_b" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalDB" tabindex="-1" aria-labelledby="modalDBLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalDBLabel">Category: d_b.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/d_b.jpg" alt="d_b Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- d_c.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalDC">
+            <img src="img/d_c.jpg" alt="Category d_c" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalDC" tabindex="-1" aria-labelledby="modalDCLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalDCLabel">Category: d_c.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/d_c.jpg" alt="d_c Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- d_d.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalDD">
+            <img src="img/d_d.jpg" alt="Category d_d" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalDD" tabindex="-1" aria-labelledby="modalDDLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalDDLabel">Category: d_d.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/d_d.jpg" alt="d_d Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- d_e_0.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalDE0">
+            <img src="img/d_e_0.jpg" alt="Category d_e_0" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalDE0" tabindex="-1" aria-labelledby="modalDE0Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalDE0Label">Category: d_e_0.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/d_e_0.jpg" alt="d_e_0 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- d_e_1.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalDE1">
+            <img src="img/d_e_1.jpg" alt="Category d_e_1" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalDE1" tabindex="-1" aria-labelledby="modalDE1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalDE1Label">Category: d_e_1.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/d_e_1.jpg" alt="d_e_1 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- d_e_2.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalDE2">
+            <img src="img/d_e_2.jpg" alt="Category d_e_2" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalDE2" tabindex="-1" aria-labelledby="modalDE2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalDE2Label">Category: d_e_2.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/d_e_2.jpg" alt="d_e_2 Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- d_f.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalDF">
+            <img src="img/d_f.jpg" alt="Category d_f" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalDF" tabindex="-1" aria-labelledby="modalDFLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalDFLabel">Category: d_f.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/d_f.jpg" alt="d_f Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================= -->
+      <!--   IMAGES STARTING WITH E  -->
+      <!-- ========================= -->
+
+      
+      <!-- e_f.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalEF">
+            <img src="img/e_f.jpg" alt="Category e_f" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalEF" tabindex="-1" aria-labelledby="modalEFLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalEFLabel">Category: e_f.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/e_f.jpg" alt="e_f Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- e_i.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalEI">
+            <img src="img/e_i.jpg" alt="Category e_i" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalEI" tabindex="-1" aria-labelledby="modalEILabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalEILabel">Category: e_i.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/e_i.jpg" alt="e_i Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- e_j.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalEJ">
+            <img src="img/e_j.jpg" alt="Category e_j" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalEJ" tabindex="-1" aria-labelledby="modalEJLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalEJLabel">Category: e_j.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/e_j.jpg" alt="e_j Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- e_k.jpg -->
+      <div class="col-md-3 col-sm-6">
+        <figure>
+          <a data-bs-toggle="modal" data-bs-target="#modalEK">
+            <img src="img/e_k.jpg" alt="Category e_k" class="gallery-img">
+          </a>
+        </figure>
+      </div>
+      <div class="modal fade" id="modalEK" tabindex="-1" aria-labelledby="modalEKLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black" id="modalEKLabel">Category: e_k.jpg</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/e_k.jpg" alt="e_k Large" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div><!-- /row.g-4 -->
   </div><!-- /container-xl -->
 </section>
 
@@ -320,7 +1380,7 @@
         <div class="footer_1i d-flex align-items-start">
           <img src="img/logo.png" alt="Heritage Hotels Arua" class="logo-footer me-3">
           <p class="mb-0 text-light">
-            At Heritage Hotels, we pride ourselves on delivering exceptional hospitality and creating unforgettable experiences. 
+            At Heritage Hotels, we pride ourselves on delivering exceptional hospitality and creating unforgettable experiences.
             Our philosophy is simple: every guest deserves our best, with a touch of elegance. We promise a home away from home.
           </p>
         </div>
@@ -332,21 +1392,27 @@
             <div class="col-md-4 pe-0 col-4">
               <div class="grid clearfix">
                 <figure class="effect-jazz mb-0">
-                  <a href="gallery.html"><img src="img/index_gallery_1.jpg" class="w-100" alt="gallery1"></a>
+                  <a href="gallery.html">
+                    <img src="img/index_gallery_1.jpg" class="w-100" alt="gallery1">
+                  </a>
                 </figure>
               </div>
             </div>
             <div class="col-md-4 pe-0 col-4">
               <div class="grid clearfix">
                 <figure class="effect-jazz mb-0">
-                  <a href="gallery.html"><img src="img/index_gallery_2.jpg" class="w-100" alt="gallery2"></a>
+                  <a href="gallery.html">
+                    <img src="img/index_gallery_2.jpg" class="w-100" alt="gallery2">
+                  </a>
                 </figure>
               </div>
             </div>
             <div class="col-md-4 pe-0 col-4">
               <div class="grid clearfix">
                 <figure class="effect-jazz mb-0">
-                  <a href="gallery.html"><img src="img/index_gallery_3.jpg" class="w-100" alt="gallery3"></a>
+                  <a href="gallery.html">
+                    <img src="img/index_gallery_3.jpg" class="w-100" alt="gallery3">
+                  </a>
                 </figure>
               </div>
             </div>
@@ -355,21 +1421,27 @@
             <div class="col-md-4 pe-0 col-4">
               <div class="grid clearfix">
                 <figure class="effect-jazz mb-0">
-                  <a href="gallery.html"><img src="img/index_gallery_4.jpg" class="w-100" alt="gallery4"></a>
+                  <a href="gallery.html">
+                    <img src="img/index_gallery_4.jpg" class="w-100" alt="gallery4">
+                  </a>
                 </figure>
               </div>
             </div>
             <div class="col-md-4 pe-0 col-4">
               <div class="grid clearfix">
                 <figure class="effect-jazz mb-0">
-                  <a href="gallery.html"><img src="img/index_gallery_5.jpg" class="w-100" alt="gallery5"></a>
+                  <a href="gallery.html">
+                    <img src="img/index_gallery_5.jpg" class="w-100" alt="gallery5">
+                  </a>
                 </figure>
               </div>
             </div>
             <div class="col-md-4 pe-0 col-4">
               <div class="grid clearfix">
                 <figure class="effect-jazz mb-0">
-                  <a href="gallery.html"><img src="img/index_gallery_6.jpg" class="w-100" alt="gallery6"></a>
+                  <a href="gallery.html">
+                    <img src="img/index_gallery_6.jpg" class="w-100" alt="gallery6">
+                  </a>
                 </figure>
               </div>
             </div>
@@ -419,7 +1491,6 @@
     </div>
   </div>
 </section>
-
 
 <!-- STICKY NAV SCRIPT -->
 <script>

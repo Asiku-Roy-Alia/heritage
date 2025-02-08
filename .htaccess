@@ -1,0 +1,9 @@
+# Enable the rewrite engine
+RewriteEngine On
+
+# Check if the requested filename is not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# If a file with .html appended exists, rewrite the URL
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]

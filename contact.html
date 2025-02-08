@@ -11,24 +11,25 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/global.css" rel="stylesheet">
-  <link href="css/about.css" rel="stylesheet"> <!-- Reuse or create contact.css if preferred -->
+  <link href="css/about.css" rel="stylesheet"> <!-- Or contact.css if you prefer -->
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Favicons -->
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <!-- Android Icons -->
   <link rel="icon" type="image/png" sizes="512x512" href="img/android-chrome-512x512.png">
   <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
-
-  <!-- Web App Manifest -->
   <link rel="manifest" href="img/site.webmanifest">
-  <!-- Scripts -->
+
+  <!-- Bootstrap JS -->
   <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
 
+  <!-- TOP BAR -->
   <div class="top-bar">
     <div class="container-xl">
       <div class="contact-info">
@@ -48,21 +49,21 @@
     </div>
   </div>
 
-
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-md" id="navbar_sticky">
     <div class="container-xl">
       <!-- LOGO -->
       <a class="navbar-brand p-0" href="index.html">
         <img src="img/logo.png" alt="Heritage Hotels Arua" />
       </a>
-  
+
       <!-- Mobile Toggle Button -->
       <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
               aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" style="color:#fff;"></span>
       </button>
-  
+
       <!-- NAV LINKS -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -70,8 +71,7 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <!-- Make “About” active -->
-            <a class="nav-link active" href="about.html">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="accommodation.html">Rooms</a>
@@ -91,8 +91,9 @@
           <li class="nav-item">
             <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
+          <!-- Make “Contact” link active here -->
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link active" href="contact.html">Contact</a>
           </li>
         </ul>
         <!-- “BOOK NOW” Button -->
@@ -103,82 +104,67 @@
         </ul>
       </div><!-- /.collapse -->
     </div><!-- /.container-xl -->
-  </nav> 
+  </nav>
 
-
+  <!-- PAGE HEADER -->
   <section class="center_home" style="background-color: #3A3138; padding: 60px 0;">
     <div class="container-xl text-center text-white">
-      <h2 class="text-uppercase">About Us</h2>
+      <h2 class="text-uppercase">Contact Us</h2>
       <h6 class="mt-3">
         <a class="text-white" href="index.html">Home</a>
-        <span class="mx-2 text-muted">/</span> About Us
+        <span class="mx-2 text-muted">/</span> Contact
       </h6>
     </div>
   </section>
 
-
-<!-- CONTACT SECTION -->
-<section id="contact" class="p_3">
-  <div class="container-xl">
-    <div class="row contact_1">
-      <div class="col-md-8">
-        <div class="contact_1l">
-          <h4>Get in Touch</h4>
-          <p class="mt-3 mb-4 fs-5">
-            We’d love to hear from you. Whether you have questions about our rooms, facilities, or need assistance planning an event, feel free to reach out. Fill out the form below or send us an email.
-          </p>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="p_3">
+    <div class="container-xl">
+      <div class="row contact_1">
+        <div class="col-md-8">
+          <div class="contact_1l">
+            <h4>Get in Touch</h4>
+            <p class="mt-3 mb-4 fs-5">
+              We’d love to hear from you! Whether you have questions about our rooms, facilities, or events, feel free to reach out. 
+              Fill out the form below or send us an email.
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- Right Column: Key Contact Info (Address, Tel, Mobile, Email) -->
-      <div class="col-md-4">
-        <div class="contact_1r">
-          <div class="contact_1ri row mb-4">
-            <div class="col-md-2 col-2">
-              <div class="contact_1ril text-center">
+        <!-- Right Column: Key Contact Info -->
+        <div class="col-md-4">
+          <div class="contact_1r">
+            <div class="contact_1ri row mb-4">
+              <div class="col-md-2 col-2 text-center">
                 <span class="text-info fs-1 lh-1"><i class="fa fa-map-marker"></i></span>
               </div>
-            </div>
-            <div class="col-md-10 col-10">
-              <div class="contact_1rir">
+              <div class="col-md-10 col-10">
                 <h5 class="mb-0 fw-bold">Address</h5>
                 <p class="mb-0 font_14">Plot 24, Weatherhead Parklane, Arua</p>
               </div>
             </div>
-          </div>
-          <div class="contact_1ri row mb-4">
-            <div class="col-md-2 col-2">
-              <div class="contact_1ril text-center">
+            <div class="contact_1ri row mb-4">
+              <div class="col-md-2 col-2 text-center">
                 <span class="text-success fs-1 lh-1"><i class="fa fa-phone"></i></span>
               </div>
-            </div>
-            <div class="col-md-10 col-10">
-              <div class="contact_1rir">
+              <div class="col-md-10 col-10">
                 <h5 class="mb-0 fw-bold">Tel</h5>
                 <p class="mb-0 font_14">+256 393274611</p>
               </div>
             </div>
-          </div>
-          <div class="contact_1ri row mb-4">
-            <div class="col-md-2 col-2">
-              <div class="contact_1ril text-center">
+            <div class="contact_1ri row mb-4">
+              <div class="col-md-2 col-2 text-center">
                 <span class="text-warning fs-1 lh-1"><i class="fa fa-mobile"></i></span>
               </div>
-            </div>
-            <div class="col-md-10 col-10">
-              <div class="contact_1rir">
+              <div class="col-md-10 col-10">
                 <h5 class="mb-0 fw-bold">Phone</h5>
                 <p class="mb-0 font_14">+256 772069207</p>
               </div>
             </div>
-          </div>
-          <div class="contact_1ri row">
-            <div class="col-md-2 col-2">
-              <div class="contact_1ril text-center">
+            <div class="contact_1ri row">
+              <div class="col-md-2 col-2 text-center">
                 <span class="text-primary fs-1 lh-1"><i class="fa fa-envelope"></i></span>
               </div>
-            </div>
-            <div class="col-md-10 col-10">
-              <div class="contact_1rir">
+              <div class="col-md-10 col-10">
                 <h5 class="mb-0 fw-bold">Email</h5>
                 <p class="mb-0 font_14">
                   <a class="text-dark" href="mailto:info@heritagehotelsug.com">
@@ -187,215 +173,289 @@
                 </p>
               </div>
             </div>
-          </div>
-        </div><!-- /contact_1r -->
-      </div><!-- /col-md-4 -->
-    </div><!-- /row contact_1 -->
+          </div><!-- /contact_1r -->
+        </div><!-- /col-md-4 -->
+      </div><!-- /row contact_1 -->
 
-    <!-- MAP & FORM -->
-    <div class="row contact_2 mt-5">
-      <!-- Left: Map -->
-      <div class="col-md-8 mb-4 mb-md-0">
-        <div class="contact_2r">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.070090055103!2d30.91954710032076!3d3.0191606969440845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x176e623f09812411%3A0xfd335fea7e56d6a2!2sHeritage%20Courts%20-%20Arua!5e0!3m2!1sen!2sug!4v1738061947041!5m2!1sen!2sug" 
-            width="100%" 
-            height="500" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-      </div>
-      <!-- Right: Contact Form (Name, Email, Phone, Message only) -->
-      <div class="col-md-4">
-        <div class="contact_2l mt-5 mt-md-0">
-          <div class="contact_2li row mb-4">
-            <div class="col-md-2 col-2 text-center">
-              <span class="fs-1 col_yell lh-1">
-                <i class="fa fa-envelope"></i>
-              </span>
-            </div>
-            <div class="col-md-10 col-10">
-              <h5 class="fw-bold">Send Us a Message</h5>
-            </div>
+      <!-- MAP & FORM -->
+      <div class="row contact_2 mt-5">
+        <!-- LEFT: MAP -->
+        <div class="col-md-8 mb-4 mb-md-0">
+          <div class="contact_2r">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.070090055103!2d30.91954710032076!3d3.0191606969440845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x176e623f09812411%3A0xfd335fea7e56d6a2!2sHeritage%20Courts%20-%20Arua!5e0!3m2!1sen!2sug!4v1738061947041!5m2!1sen!2sug"
+              width="100%"
+              height="500"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
+        </div>
 
-          <form action="send_email.php" method="post">
-            <div class="mb-3">
-              <label for="yourName" class="form-label font_14">Your Name</label>
-              <input 
-                type="text" 
-                class="form-control bg-light" 
-                id="yourName" 
-                name="yourName" 
-                required
-              >
+        <!-- RIGHT: CONTACT FORM -->
+        <div class="col-md-4">
+          <div class="contact_2l mt-5 mt-md-0">
+            <div class="contact_2li row mb-4">
+              <div class="col-md-2 col-2 text-center">
+                <span class="fs-1 col_yell lh-1"><i class="fa fa-envelope"></i></span>
+              </div>
+              <div class="col-md-10 col-10">
+                <h5 class="fw-bold">Send Us a Message</h5>
+              </div>
             </div>
-            <div class="mb-3">
-              <label for="yourEmail" class="form-label font_14">Email Address</label>
-              <input 
-                type="email" 
-                class="form-control bg-light" 
-                id="yourEmail" 
-                name="yourEmail"
-                required
-              >
-            </div>
-            <div class="mb-3">
-              <label for="yourPhone" class="form-label font_14">Phone</label>
-              <input 
-                type="text" 
-                class="form-control bg-light" 
-                id="yourPhone" 
-                name="yourPhone"
-                required
-              >
-            </div>
-            <div class="mb-3">
-              <label for="yourMessage" class="form-label font_14">Message</label>
-              <textarea 
-                class="form-control bg-light" 
-                id="yourMessage" 
-                name="yourMessage" 
-                rows="4" 
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="button w-100 fw-bold">Send Message Now</button>
-          </form>
-          
-        </div>
-      </div>
-    </div><!-- /row contact_2 -->
-  </div><!-- /container-xl -->
-</section>
 
-<!-- FOOTER -->
-<section id="footer" class="p_3 bg_dark">
-  <div class="container-xl">
-    <div class="row footer_1">
-      <div class="col-md-3">
-        <div class="footer_1i d-flex align-items-start">
-          <img src="img/logo.png" alt="Heritage Hotels Arua" class="logo-footer me-3">
-          <p class="mb-0 text-light">
-            At Heritage Hotels, we pride ourselves on delivering exceptional hospitality and creating unforgettable experiences. 
-            Our philosophy is simple: every guest deserves our best, with a touch of elegance. We promise a home away from home.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="footer_1i">
-          <h5 class="text-white mb-4">GALLERY</h5>
-          <div class="footer_1i1 row">
-            <div class="col-md-4 pe-0 col-4">
-              <div class="grid clearfix">
-                <figure class="effect-jazz mb-0">
-                  <a href="gallery.html"><img src="img/index_gallery_1.jpg" class="w-100" alt="gallery1"></a>
-                </figure>
+            <!-- Contact Form with ID for JS -->
+            <form id="contactForm">
+              <!-- Name -->
+              <div class="mb-3">
+                <label for="yourName" class="form-label font_14">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control bg-light"
+                  id="yourName"
+                  name="yourName"
+                  placeholder="John Manyata"
+                  required
+                >
               </div>
-            </div>
-            <div class="col-md-4 pe-0 col-4">
-              <div class="grid clearfix">
-                <figure class="effect-jazz mb-0">
-                  <a href="gallery.html"><img src="img/index_gallery_2.jpg" class="w-100" alt="gallery2"></a>
-                </figure>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="yourEmail" class="form-label font_14">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control bg-light"
+                  id="yourEmail"
+                  name="yourEmail"
+                  placeholder="user@example.com"
+                  required
+                >
               </div>
-            </div>
-            <div class="col-md-4 pe-0 col-4">
-              <div class="grid clearfix">
-                <figure class="effect-jazz mb-0">
-                  <a href="gallery.html"><img src="img/index_gallery_3.jpg" class="w-100" alt="gallery3"></a>
-                </figure>
+
+              <!-- Phone -->
+              <div class="mb-3">
+                <label for="yourPhone" class="form-label font_14">Phone</label>
+                <input
+                  type="text"
+                  class="form-control bg-light"
+                  id="yourPhone"
+                  name="yourPhone"
+                  placeholder="+256772123456"
+                  required
+                >
               </div>
-            </div>
-          </div>
-          <div class="footer_1i1 row mt-3">
-            <div class="col-md-4 pe-0 col-4">
-              <div class="grid clearfix">
-                <figure class="effect-jazz mb-0">
-                  <a href="gallery.html"><img src="img/index_gallery_4.jpg" class="w-100" alt="gallery4"></a>
-                </figure>
+
+              <!-- Message -->
+              <div class="mb-3">
+                <label for="yourMessage" class="form-label font_14">Message</label>
+                <textarea
+                  class="form-control bg-light"
+                  id="yourMessage"
+                  name="yourMessage"
+                  rows="4"
+                  placeholder="At least 12 characters."
+                  required
+                ></textarea>
               </div>
-            </div>
-            <div class="col-md-4 pe-0 col-4">
-              <div class="grid clearfix">
-                <figure class="effect-jazz mb-0">
-                  <a href="gallery.html"><img src="img/index_gallery_5.jpg" class="w-100" alt="gallery5"></a>
-                </figure>
-              </div>
-            </div>
-            <div class="col-md-4 pe-0 col-4">
-              <div class="grid clearfix">
-                <figure class="effect-jazz mb-0">
-                  <a href="gallery.html"><img src="img/index_gallery_6.jpg" class="w-100" alt="gallery6"></a>
-                </figure>
-              </div>
-            </div>
+
+              <button type="submit" class="button w-100 fw-bold">Send Message Now</button>
+            </form>
           </div>
         </div>
-      </div>
-      <!-- CONTACT US -->
-      <div class="col-md-3">
-        <div class="footer_1i">
-          <h5 class="text-white mb-3">CONTACT US</h5>
-          <p class="text-light mb-2">Plot 24, Weatherhead Parklane, Arua</p>
-          <p class="text-light mb-2"><span class="fw-bold">Tel:</span> +256 393274611</p>
-          <p class="text-light mb-2"><span class="fw-bold">Phone:</span> +256 772069207</p>
-          <p class="mb-0">
-            <a class="text-light" href="mailto:info@heritagehotelsug.com">info@heritagehotelsug.com</a>
-          </p>
+      </div><!-- /row contact_2 -->
+    </div><!-- /container-xl -->
+  </section>
+
+  <!-- FEEDBACK MODAL (hidden by default) -->
+  <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="feedbackModalLabel">Form Submission</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
-      </div>
-      <!-- NEWSLETTER -->
-      <div class="col-md-3">
-        <div class="footer_1i">
-          <h5 class="text-white mb-3">STAY IN TOUCH</h5>
-          <p class="mb-3 text-light">
-            Sign up for our newsletter to receive exclusive offers and the latest updates.
-          </p>
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Your Email">
-            <span class="input-group-btn">
-              <button class="btn btn-primary bg_yell rounded-0 p-2 px-3 border-0" type="button">
-                <i class="fa fa-location-arrow"></i>
-              </button>
-            </span>
-          </div>
+        <div class="modal-body" id="feedbackModalBody">
+          <!-- JS will insert feedback here -->
         </div>
-      </div>
-    </div>
-    <hr class="mt-4 mb-4 hr_1">
-    <div class="row footer_2 text-center">
-      <div class="col-md-12">
-        <p class="mb-0 text-light">
-          © 2025 Heritage Hotels UG. All Rights Reserved | Design by
-          <a class="col_yell fw-bold" href="https://tavektechnologies.com/" target="_blank">
-            Tavek Technologies LTD
-          </a>
-        </p>
       </div>
     </div>
   </div>
-</section>
 
-<!-- STICKY NAV SCRIPT -->
-<script>
-window.onscroll = function() {myFunction()};
-var navbar_sticky = document.getElementById("navbar_sticky");
-var sticky = navbar_sticky ? navbar_sticky.offsetTop : 0;
-var navbar_height = document.querySelector('.navbar').offsetHeight;
+  <!-- FOOTER -->
+  <section id="footer" class="p_3 bg_dark">
+    <div class="container-xl">
+      <div class="row footer_1">
+        <div class="col-md-3">
+          <div class="footer_1i d-flex align-items-start">
+            <img src="img/logo.png" alt="Heritage Hotels Arua" class="logo-footer me-3">
+            <p class="mb-0 text-light">
+              At Heritage Hotels, we pride ourselves on delivering exceptional hospitality and creating unforgettable experiences.
+              Our philosophy is simple: every guest deserves our best, with a touch of elegance. We promise a home away from home.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer_1i">
+            <h5 class="text-white mb-4">GALLERY</h5>
+            <div class="footer_1i1 row">
+              <div class="col-md-4 pe-0 col-4">
+                <div class="grid clearfix">
+                  <figure class="effect-jazz mb-0">
+                    <a href="gallery.html">
+                      <img src="img/index_gallery_1.jpg" class="w-100" alt="gallery1">
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-md-4 pe-0 col-4">
+                <div class="grid clearfix">
+                  <figure class="effect-jazz mb-0">
+                    <a href="gallery.html">
+                      <img src="img/index_gallery_2.jpg" class="w-100" alt="gallery2">
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-md-4 pe-0 col-4">
+                <div class="grid clearfix">
+                  <figure class="effect-jazz mb-0">
+                    <a href="gallery.html">
+                      <img src="img/index_gallery_3.jpg" class="w-100" alt="gallery3">
+                    </a>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="footer_1i1 row mt-3">
+              <div class="col-md-4 pe-0 col-4">
+                <div class="grid clearfix">
+                  <figure class="effect-jazz mb-0">
+                    <a href="gallery.html">
+                      <img src="img/index_gallery_4.jpg" class="w-100" alt="gallery4">
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-md-4 pe-0 col-4">
+                <div class="grid clearfix">
+                  <figure class="effect-jazz mb-0">
+                    <a href="gallery.html">
+                      <img src="img/index_gallery_5.jpg" class="w-100" alt="gallery5">
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-md-4 pe-0 col-4">
+                <div class="grid clearfix">
+                  <figure class="effect-jazz mb-0">
+                    <a href="gallery.html">
+                      <img src="img/index_gallery_6.jpg" class="w-100" alt="gallery6">
+                    </a>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CONTACT US -->
+        <div class="col-md-3">
+          <div class="footer_1i">
+            <h5 class="text-white mb-3">CONTACT US</h5>
+            <p class="text-light mb-2">Plot 24, Weatherhead Parklane, Arua</p>
+            <p class="text-light mb-2"><span class="fw-bold">Tel:</span> +256 393274611</p>
+            <p class="text-light mb-2"><span class="fw-bold">Phone:</span> +256 772069207</p>
+            <p class="mb-0">
+              <a class="text-light" href="mailto:info@heritagehotelsug.com">info@heritagehotelsug.com</a>
+            </p>
+          </div>
+        </div>
+        <!-- NEWSLETTER -->
+        <div class="col-md-3">
+          <div class="footer_1i">
+            <h5 class="text-white mb-3">STAY IN TOUCH</h5>
+            <p class="mb-3 text-light">
+              Sign up for our newsletter to receive exclusive offers and the latest updates.
+            </p>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Your Email">
+              <span class="input-group-btn">
+                <button class="btn btn-primary bg_yell rounded-0 p-2 px-3 border-0" type="button">
+                  <i class="fa fa-location-arrow"></i>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-4 mb-4 hr_1">
+      <div class="row footer_2 text-center">
+        <div class="col-md-12">
+          <p class="mb-0 text-light">
+            © 2025 Heritage Hotels UG. All Rights Reserved | Design by
+            <a class="col_yell fw-bold" href="https://tavektechnologies.com/" target="_blank">
+              Tavek Technologies LTD
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-function myFunction() {
-  if (window.pageYOffset >= sticky + navbar_height) {
-    if (navbar_sticky) navbar_sticky.classList.add("sticky");
-  } else {
-    if (navbar_sticky) navbar_sticky.classList.remove("sticky");
-    document.body.style.paddingTop = '0';
+  <!-- ASYNCHRONOUS FORM SCRIPT -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    const contactForm = document.getElementById('contactForm');
+    const feedbackModal = new bootstrap.Modal(document.getElementById('feedbackModal'));
+    const feedbackModalBody = document.getElementById('feedbackModalBody');
+
+    contactForm.addEventListener('submit', function(e){
+      e.preventDefault(); // Prevent normal form POST
+
+      // Gather data
+      const formData = new FormData(contactForm);
+
+      // Send via Fetch to send_email.php
+      fetch('send_email.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.text())
+      .then(data => {
+        // Show result in the feedback modal
+        feedbackModalBody.innerHTML = data;
+        feedbackModal.show();
+
+        // If success, optionally clear the form
+        if (data.includes("Email sent successfully")) {
+          contactForm.reset();
+        }
+      })
+      .catch(err => {
+        feedbackModalBody.innerHTML = "An error occurred. Please try again.";
+        feedbackModal.show();
+      });
+    });
+  });
+  </script>
+
+  <!-- STICKY NAV SCRIPT -->
+  <script>
+  window.onscroll = function() {myFunction()};
+  var navbar_sticky = document.getElementById("navbar_sticky");
+  var sticky = navbar_sticky ? navbar_sticky.offsetTop : 0;
+  var navbar_height = document.querySelector('.navbar').offsetHeight;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky + navbar_height) {
+      if (navbar_sticky) navbar_sticky.classList.add("sticky");
+    } else {
+      if (navbar_sticky) navbar_sticky.classList.remove("sticky");
+      document.body.style.paddingTop = '0';
+    }
   }
-}
-</script>
+  </script>
 
 </body>
 </html>
